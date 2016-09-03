@@ -1,0 +1,704 @@
+\hypertarget{class_expr_tree}{\section{Expr\+Tree$<$ Data\+Type $>$ Class Template Reference}
+\label{class_expr_tree}\index{Expr\+Tree$<$ Data\+Type $>$@{Expr\+Tree$<$ Data\+Type $>$}}
+}
+
+
+{\ttfamily \#include $<$Expression\+Tree-\/1.\+h$>$}
+
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_expr_tree_1_1_expr_tree_node}{Expr\+Tree\+Node}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_expr_tree_a1d5004443b461637bcb0fe0a86759d50}{Expr\+Tree} ()
+\item 
+\hyperlink{class_expr_tree_aeec9dc6139cf32fcc911840bab438239}{Expr\+Tree} (const \hyperlink{class_expr_tree}{Expr\+Tree} \&source)
+\item 
+\hyperlink{class_expr_tree}{Expr\+Tree} \& \hyperlink{class_expr_tree_a9a7b2120af2c2df666b1154eec20008a}{operator=} (const \hyperlink{class_expr_tree}{Expr\+Tree} \&source)
+\item 
+\hyperlink{class_expr_tree_a8976e9af7e1209b9db475b863ab9f31d}{$\sim$\+Expr\+Tree} ()
+\item 
+void \hyperlink{class_expr_tree_a283a61049eb163f6f370d562cc92c824}{build} ()
+\item 
+void \hyperlink{class_expr_tree_ac367645dc4ccaf488e121cd5a0a8c07d}{expression} () const 
+\item 
+Data\+Type \hyperlink{class_expr_tree_ad1579e64d55cdfcd500a634ef69ed792}{evaluate} () const   throw (logic\+\_\+error)
+\item 
+void \hyperlink{class_expr_tree_a87d6593a3ad6199b5521f6d1e3ba851f}{clear} ()
+\item 
+void \hyperlink{class_expr_tree_a8bfcf0da6dfd93f4228a35cded704fb4}{commute} ()
+\item 
+bool \hyperlink{class_expr_tree_adfa8f6dd2a984f83b2eb50958a0bb585}{is\+Empty} () const 
+\item 
+bool \hyperlink{class_expr_tree_ae64a4e3b5008fa2f533fd7461ead2485}{is\+Equivalent} (const \hyperlink{class_expr_tree}{Expr\+Tree} \&source) const 
+\item 
+void \hyperlink{class_expr_tree_a6f4c5e2ae8224fb53fb893231814e6d9}{show\+Structure} () const 
+\item 
+\hyperlink{class_expr_tree_a1d5004443b461637bcb0fe0a86759d50}{Expr\+Tree} ()
+\item 
+\hyperlink{class_expr_tree_aeec9dc6139cf32fcc911840bab438239}{Expr\+Tree} (const \hyperlink{class_expr_tree}{Expr\+Tree} \&source)
+\item 
+\hyperlink{class_expr_tree}{Expr\+Tree} \& \hyperlink{class_expr_tree_a4595df38a3ddeb54994af6fced99ae03}{operator=} (const \hyperlink{class_expr_tree}{Expr\+Tree} \&source)
+\item 
+\hyperlink{class_expr_tree_a8976e9af7e1209b9db475b863ab9f31d}{$\sim$\+Expr\+Tree} ()
+\item 
+void \hyperlink{class_expr_tree_a283a61049eb163f6f370d562cc92c824}{build} ()
+\item 
+void \hyperlink{class_expr_tree_ac367645dc4ccaf488e121cd5a0a8c07d}{expression} () const 
+\item 
+Data\+Type \hyperlink{class_expr_tree_ad1579e64d55cdfcd500a634ef69ed792}{evaluate} () const   throw (logic\+\_\+error)
+\item 
+void \hyperlink{class_expr_tree_a87d6593a3ad6199b5521f6d1e3ba851f}{clear} ()
+\item 
+void \hyperlink{class_expr_tree_a8bfcf0da6dfd93f4228a35cded704fb4}{commute} ()
+\item 
+bool \hyperlink{class_expr_tree_a3b534db1ad9bf8fefadb20bd1161c96b}{is\+Empty} () const 
+\item 
+bool \hyperlink{class_expr_tree_ae64a4e3b5008fa2f533fd7461ead2485}{is\+Equivalent} (const \hyperlink{class_expr_tree}{Expr\+Tree} \&source) const 
+\item 
+void \hyperlink{class_expr_tree_a6f4c5e2ae8224fb53fb893231814e6d9}{show\+Structure} () const 
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_expr_tree_a7f416a6fdcf60fb637c497c7665024b2}{show\+Helper} (\hyperlink{class_expr_tree_1_1_expr_tree_node}{Expr\+Tree\+Node} $\ast$p, int level) const 
+\item 
+void \hyperlink{class_expr_tree_ad9146ef34bdb11f158dabbd7bacea930}{build\+Helper} (\hyperlink{class_expr_tree_1_1_expr_tree_node}{Expr\+Tree\+Node} $\ast$\&top)
+\item 
+void \hyperlink{class_expr_tree_a7575f010e1ca9dfd2abbe15d4fe387b9}{expression\+Helper} (\hyperlink{class_expr_tree_1_1_expr_tree_node}{Expr\+Tree\+Node} $\ast$ptr) const 
+\item 
+void \hyperlink{class_expr_tree_a3c31a2f832e1949790e79d3f23ffa0bb}{clear\+Helper} (\hyperlink{class_expr_tree_1_1_expr_tree_node}{Expr\+Tree\+Node} $\ast$\&ptr)
+\item 
+Data\+Type \hyperlink{class_expr_tree_a0e18bcfbe367fcc55eca5a7cc9179788}{evaluate\+Helper} (\hyperlink{class_expr_tree_1_1_expr_tree_node}{Expr\+Tree\+Node} $\ast$ptr) const   throw (logic\+\_\+error)
+\item 
+void \hyperlink{class_expr_tree_abbf18be89ca86f59350e8d6bab8c65dd}{commute\+Help} (\hyperlink{class_expr_tree_1_1_expr_tree_node}{Expr\+Tree\+Node} $\ast$ptr)
+\item 
+bool \hyperlink{class_expr_tree_aac6ff43c0f59106d2f137b620aeeda46}{is\+Equivalent\+Help} (const \hyperlink{class_expr_tree_1_1_expr_tree_node}{Expr\+Tree\+Node} $\ast$home, const \hyperlink{class_expr_tree_1_1_expr_tree_node}{Expr\+Tree\+Node} $\ast$source) const 
+\item 
+void \hyperlink{class_expr_tree_a27c7c1665bf9d5f379ce59925c295a2e}{copy\+Helper} (\hyperlink{class_expr_tree_1_1_expr_tree_node}{Expr\+Tree\+Node} $\ast$\&ptr, \hyperlink{class_expr_tree_1_1_expr_tree_node}{Expr\+Tree\+Node} $\ast$source)
+\item 
+void \hyperlink{class_expr_tree_a7f416a6fdcf60fb637c497c7665024b2}{show\+Helper} (\hyperlink{class_expr_tree_1_1_expr_tree_node}{Expr\+Tree\+Node} $\ast$p, int level) const 
+\item 
+void \hyperlink{class_expr_tree_ad9146ef34bdb11f158dabbd7bacea930}{build\+Helper} (\hyperlink{class_expr_tree_1_1_expr_tree_node}{Expr\+Tree\+Node} $\ast$\&top)
+\item 
+void \hyperlink{class_expr_tree_a7575f010e1ca9dfd2abbe15d4fe387b9}{expression\+Helper} (\hyperlink{class_expr_tree_1_1_expr_tree_node}{Expr\+Tree\+Node} $\ast$ptr) const 
+\item 
+void \hyperlink{class_expr_tree_a3c31a2f832e1949790e79d3f23ffa0bb}{clear\+Helper} (\hyperlink{class_expr_tree_1_1_expr_tree_node}{Expr\+Tree\+Node} $\ast$\&ptr)
+\item 
+Data\+Type \hyperlink{class_expr_tree_a0e18bcfbe367fcc55eca5a7cc9179788}{evaluate\+Helper} (\hyperlink{class_expr_tree_1_1_expr_tree_node}{Expr\+Tree\+Node} $\ast$ptr) const   throw (logic\+\_\+error)
+\item 
+void \hyperlink{class_expr_tree_abbf18be89ca86f59350e8d6bab8c65dd}{commute\+Help} (\hyperlink{class_expr_tree_1_1_expr_tree_node}{Expr\+Tree\+Node} $\ast$ptr)
+\item 
+bool \hyperlink{class_expr_tree_aac6ff43c0f59106d2f137b620aeeda46}{is\+Equivalent\+Help} (const \hyperlink{class_expr_tree_1_1_expr_tree_node}{Expr\+Tree\+Node} $\ast$home, const \hyperlink{class_expr_tree_1_1_expr_tree_node}{Expr\+Tree\+Node} $\ast$source) const 
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_expr_tree_1_1_expr_tree_node}{Expr\+Tree\+Node} $\ast$ \hyperlink{class_expr_tree_ac8638e86184df382f2dfdaf49000e34b}{root}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_expr_tree_a1d5004443b461637bcb0fe0a86759d50}{\index{Expr\+Tree@{Expr\+Tree}!Expr\+Tree@{Expr\+Tree}}
+\index{Expr\+Tree@{Expr\+Tree}!Expr\+Tree@{Expr\+Tree}}
+\subsubsection[{Expr\+Tree}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+Type $>$ {\bf Expr\+Tree}$<$ Data\+Type $>$\+::{\bf Expr\+Tree} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_expr_tree_a1d5004443b461637bcb0fe0a86759d50}
+This is the tree constructor. 
+\begin{DoxyParams}{Parameters}
+{\em none} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+constructor, no return
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Precondition}
+no pre conditions 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+the root will be null 
+\end{DoxyPostcond}
+\hypertarget{class_expr_tree_aeec9dc6139cf32fcc911840bab438239}{\index{Expr\+Tree@{Expr\+Tree}!Expr\+Tree@{Expr\+Tree}}
+\index{Expr\+Tree@{Expr\+Tree}!Expr\+Tree@{Expr\+Tree}}
+\subsubsection[{Expr\+Tree}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+Type $>$ {\bf Expr\+Tree}$<$ Data\+Type $>$\+::{\bf Expr\+Tree} (
+\begin{DoxyParamCaption}
+\item[{const {\bf Expr\+Tree}$<$ Data\+Type $>$ \&}]{source}
+\end{DoxyParamCaption}
+)}}\label{class_expr_tree_aeec9dc6139cf32fcc911840bab438239}
+This is the tree copy constructor. Will create another tree just like the initial one. Just uses the copy\+Helper function. 
+\begin{DoxyParams}{Parameters}
+{\em \hyperlink{class_expr_tree}{Expr\+Tree},the} & tree to copy to \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+constructor, no return
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Precondition}
+there should be another tree initialized already 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+there will be two identical trees 
+\end{DoxyPostcond}
+initialize
+
+if the source is not empty proceed to copying \hypertarget{class_expr_tree_a8976e9af7e1209b9db475b863ab9f31d}{\index{Expr\+Tree@{Expr\+Tree}!````~Expr\+Tree@{$\sim$\+Expr\+Tree}}
+\index{````~Expr\+Tree@{$\sim$\+Expr\+Tree}!Expr\+Tree@{Expr\+Tree}}
+\subsubsection[{$\sim$\+Expr\+Tree}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+Type $>$ {\bf Expr\+Tree}$<$ Data\+Type $>$\+::$\sim${\bf Expr\+Tree} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_expr_tree_a8976e9af7e1209b9db475b863ab9f31d}
+This is the tree destructor.
+
+frees all memory by using clear function 
+\begin{DoxyParams}{Parameters}
+{\em none} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Precondition}
+there should be an initialized tree 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+all memory will be freed and the tree will be destroyed 
+\end{DoxyPostcond}
+\hypertarget{class_expr_tree_a1d5004443b461637bcb0fe0a86759d50}{\index{Expr\+Tree@{Expr\+Tree}!Expr\+Tree@{Expr\+Tree}}
+\index{Expr\+Tree@{Expr\+Tree}!Expr\+Tree@{Expr\+Tree}}
+\subsubsection[{Expr\+Tree}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+Type $>$ {\bf Expr\+Tree}$<$ Data\+Type $>$\+::{\bf Expr\+Tree} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_expr_tree_a1d5004443b461637bcb0fe0a86759d50}
+\hypertarget{class_expr_tree_aeec9dc6139cf32fcc911840bab438239}{\index{Expr\+Tree@{Expr\+Tree}!Expr\+Tree@{Expr\+Tree}}
+\index{Expr\+Tree@{Expr\+Tree}!Expr\+Tree@{Expr\+Tree}}
+\subsubsection[{Expr\+Tree}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+Type $>$ {\bf Expr\+Tree}$<$ Data\+Type $>$\+::{\bf Expr\+Tree} (
+\begin{DoxyParamCaption}
+\item[{const {\bf Expr\+Tree}$<$ Data\+Type $>$ \&}]{source}
+\end{DoxyParamCaption}
+)}}\label{class_expr_tree_aeec9dc6139cf32fcc911840bab438239}
+\hypertarget{class_expr_tree_a8976e9af7e1209b9db475b863ab9f31d}{\index{Expr\+Tree@{Expr\+Tree}!````~Expr\+Tree@{$\sim$\+Expr\+Tree}}
+\index{````~Expr\+Tree@{$\sim$\+Expr\+Tree}!Expr\+Tree@{Expr\+Tree}}
+\subsubsection[{$\sim$\+Expr\+Tree}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+Type $>$ {\bf Expr\+Tree}$<$ Data\+Type $>$\+::$\sim${\bf Expr\+Tree} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_expr_tree_a8976e9af7e1209b9db475b863ab9f31d}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_expr_tree_a283a61049eb163f6f370d562cc92c824}{\index{Expr\+Tree@{Expr\+Tree}!build@{build}}
+\index{build@{build}!Expr\+Tree@{Expr\+Tree}}
+\subsubsection[{build}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+Type $>$ void {\bf Expr\+Tree}$<$ Data\+Type $>$\+::build (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_expr_tree_a283a61049eb163f6f370d562cc92c824}
+This is the build function.
+
+just calls the buildhelper 
+\begin{DoxyParams}{Parameters}
+{\em none} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Precondition}
+there should be an initialized tree 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+a tree with valid data will be created 
+\end{DoxyPostcond}
+\hypertarget{class_expr_tree_a283a61049eb163f6f370d562cc92c824}{\index{Expr\+Tree@{Expr\+Tree}!build@{build}}
+\index{build@{build}!Expr\+Tree@{Expr\+Tree}}
+\subsubsection[{build}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+Type $>$ void {\bf Expr\+Tree}$<$ Data\+Type $>$\+::build (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_expr_tree_a283a61049eb163f6f370d562cc92c824}
+\hypertarget{class_expr_tree_ad9146ef34bdb11f158dabbd7bacea930}{\index{Expr\+Tree@{Expr\+Tree}!build\+Helper@{build\+Helper}}
+\index{build\+Helper@{build\+Helper}!Expr\+Tree@{Expr\+Tree}}
+\subsubsection[{build\+Helper}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+Type $>$ void {\bf Expr\+Tree}$<$ Data\+Type $>$\+::build\+Helper (
+\begin{DoxyParamCaption}
+\item[{{\bf Expr\+Tree\+Node} $\ast$\&}]{ptr}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_expr_tree_ad9146ef34bdb11f158dabbd7bacea930}
+This is the build helper
+
+creates the tree recursively basically creates a new node if it is not a digit will call the function again to create the children nodes 
+\begin{DoxyParams}{Parameters}
+{\em the} & pointer to work on, initially the root \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Precondition}
+there should be an initialized tree 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+an expression tree will be created 
+\end{DoxyPostcond}
+read in
+
+create new node
+
+if it is a digit stop, if not make more \hypertarget{class_expr_tree_ad9146ef34bdb11f158dabbd7bacea930}{\index{Expr\+Tree@{Expr\+Tree}!build\+Helper@{build\+Helper}}
+\index{build\+Helper@{build\+Helper}!Expr\+Tree@{Expr\+Tree}}
+\subsubsection[{build\+Helper}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+Type $>$ void {\bf Expr\+Tree}$<$ Data\+Type $>$\+::build\+Helper (
+\begin{DoxyParamCaption}
+\item[{{\bf Expr\+Tree\+Node} $\ast$\&}]{top}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_expr_tree_ad9146ef34bdb11f158dabbd7bacea930}
+\hypertarget{class_expr_tree_a87d6593a3ad6199b5521f6d1e3ba851f}{\index{Expr\+Tree@{Expr\+Tree}!clear@{clear}}
+\index{clear@{clear}!Expr\+Tree@{Expr\+Tree}}
+\subsubsection[{clear}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+Type $>$ void {\bf Expr\+Tree}$<$ Data\+Type $>$\+::clear (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_expr_tree_a87d6593a3ad6199b5521f6d1e3ba851f}
+This is the clear.
+
+calls the clear helper 
+\begin{DoxyParams}{Parameters}
+{\em none} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Precondition}
+there should be a built tree 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+all memory will be freed 
+\end{DoxyPostcond}
+\hypertarget{class_expr_tree_a87d6593a3ad6199b5521f6d1e3ba851f}{\index{Expr\+Tree@{Expr\+Tree}!clear@{clear}}
+\index{clear@{clear}!Expr\+Tree@{Expr\+Tree}}
+\subsubsection[{clear}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+Type $>$ void {\bf Expr\+Tree}$<$ Data\+Type $>$\+::clear (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_expr_tree_a87d6593a3ad6199b5521f6d1e3ba851f}
+\hypertarget{class_expr_tree_a3c31a2f832e1949790e79d3f23ffa0bb}{\index{Expr\+Tree@{Expr\+Tree}!clear\+Helper@{clear\+Helper}}
+\index{clear\+Helper@{clear\+Helper}!Expr\+Tree@{Expr\+Tree}}
+\subsubsection[{clear\+Helper}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+Type $>$ void {\bf Expr\+Tree}$<$ Data\+Type $>$\+::clear\+Helper (
+\begin{DoxyParamCaption}
+\item[{{\bf Expr\+Tree\+Node} $\ast$\&}]{ptr}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_expr_tree_a3c31a2f832e1949790e79d3f23ffa0bb}
+This is the clear helper.
+
+deallocates all memory recursively, if the pointer is not null it will call itself to the pointers left and right then will delete 
+\begin{DoxyParams}{Parameters}
+{\em ptr,initially} & root \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Precondition}
+there should be a built tree 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+all memory will be freed 
+\end{DoxyPostcond}
+recall to left and right of node
+
+delete the node \hypertarget{class_expr_tree_a3c31a2f832e1949790e79d3f23ffa0bb}{\index{Expr\+Tree@{Expr\+Tree}!clear\+Helper@{clear\+Helper}}
+\index{clear\+Helper@{clear\+Helper}!Expr\+Tree@{Expr\+Tree}}
+\subsubsection[{clear\+Helper}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+Type $>$ void {\bf Expr\+Tree}$<$ Data\+Type $>$\+::clear\+Helper (
+\begin{DoxyParamCaption}
+\item[{{\bf Expr\+Tree\+Node} $\ast$\&}]{ptr}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_expr_tree_a3c31a2f832e1949790e79d3f23ffa0bb}
+\hypertarget{class_expr_tree_a8bfcf0da6dfd93f4228a35cded704fb4}{\index{Expr\+Tree@{Expr\+Tree}!commute@{commute}}
+\index{commute@{commute}!Expr\+Tree@{Expr\+Tree}}
+\subsubsection[{commute}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+Type $>$ void {\bf Expr\+Tree}$<$ Data\+Type $>$\+::commute (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_expr_tree_a8bfcf0da6dfd93f4228a35cded704fb4}
+\hypertarget{class_expr_tree_a8bfcf0da6dfd93f4228a35cded704fb4}{\index{Expr\+Tree@{Expr\+Tree}!commute@{commute}}
+\index{commute@{commute}!Expr\+Tree@{Expr\+Tree}}
+\subsubsection[{commute}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+Type $>$ void {\bf Expr\+Tree}$<$ Data\+Type $>$\+::commute (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_expr_tree_a8bfcf0da6dfd93f4228a35cded704fb4}
+This is the commute function.
+
+calls commute help function 
+\begin{DoxyParams}{Parameters}
+{\em none} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Precondition}
+there should be a built tree 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+the tree will be flipped 
+\end{DoxyPostcond}
+\hypertarget{class_expr_tree_abbf18be89ca86f59350e8d6bab8c65dd}{\index{Expr\+Tree@{Expr\+Tree}!commute\+Help@{commute\+Help}}
+\index{commute\+Help@{commute\+Help}!Expr\+Tree@{Expr\+Tree}}
+\subsubsection[{commute\+Help}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+Type $>$ void {\bf Expr\+Tree}$<$ Data\+Type $>$\+::commute\+Help (
+\begin{DoxyParamCaption}
+\item[{{\bf Expr\+Tree\+Node} $\ast$}]{ptr}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_expr_tree_abbf18be89ca86f59350e8d6bab8c65dd}
+This is the commute helper function.
+
+swaps every single left and right child pointer down the tree recursively 
+\begin{DoxyParams}{Parameters}
+{\em ptr,intially} & the root \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Precondition}
+there should be a built tree 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+the tree will be flipped 
+\end{DoxyPostcond}
+if at the end, do nothing (i believe this stuff isnt needed but too lazy to test without
+
+if not at the end, swap left and right and recall for new pointers \hypertarget{class_expr_tree_abbf18be89ca86f59350e8d6bab8c65dd}{\index{Expr\+Tree@{Expr\+Tree}!commute\+Help@{commute\+Help}}
+\index{commute\+Help@{commute\+Help}!Expr\+Tree@{Expr\+Tree}}
+\subsubsection[{commute\+Help}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+Type $>$ void {\bf Expr\+Tree}$<$ Data\+Type $>$\+::commute\+Help (
+\begin{DoxyParamCaption}
+\item[{{\bf Expr\+Tree\+Node} $\ast$}]{ptr}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_expr_tree_abbf18be89ca86f59350e8d6bab8c65dd}
+\hypertarget{class_expr_tree_a27c7c1665bf9d5f379ce59925c295a2e}{\index{Expr\+Tree@{Expr\+Tree}!copy\+Helper@{copy\+Helper}}
+\index{copy\+Helper@{copy\+Helper}!Expr\+Tree@{Expr\+Tree}}
+\subsubsection[{copy\+Helper}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+Type $>$ void {\bf Expr\+Tree}$<$ Data\+Type $>$\+::copy\+Helper (
+\begin{DoxyParamCaption}
+\item[{{\bf Expr\+Tree\+Node} $\ast$\&}]{ptr, }
+\item[{{\bf Expr\+Tree\+Node} $\ast$}]{source}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_expr_tree_a27c7c1665bf9d5f379ce59925c295a2e}
+This is the function that will recursively copy two trees to eachother
+
+Checks if the current item is a character or digit, calls itself two more timess then creates the new node if it is a digit, it will only create a new node and stop 
+\begin{DoxyParams}{Parameters}
+{\em \hyperlink{class_expr_tree}{Expr\+Tree},the} & tree to copy to and copy from \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Precondition}
+there should two initialized trees 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+there will be two identical trees 
+\end{DoxyPostcond}
+\hypertarget{class_expr_tree_ad1579e64d55cdfcd500a634ef69ed792}{\index{Expr\+Tree@{Expr\+Tree}!evaluate@{evaluate}}
+\index{evaluate@{evaluate}!Expr\+Tree@{Expr\+Tree}}
+\subsubsection[{evaluate}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+Type $>$ Data\+Type {\bf Expr\+Tree}$<$ Data\+Type $>$\+::evaluate (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const throw  logic\+\_\+error) }}\label{class_expr_tree_ad1579e64d55cdfcd500a634ef69ed792}
+\hypertarget{class_expr_tree_ad1579e64d55cdfcd500a634ef69ed792}{\index{Expr\+Tree@{Expr\+Tree}!evaluate@{evaluate}}
+\index{evaluate@{evaluate}!Expr\+Tree@{Expr\+Tree}}
+\subsubsection[{evaluate}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+Type $>$ Data\+Type {\bf Expr\+Tree}$<$ Data\+Type $>$\+::evaluate (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const throw  logic\+\_\+error) }}\label{class_expr_tree_ad1579e64d55cdfcd500a634ef69ed792}
+This is the evaluate.
+
+calls the evaluation helper to get the output 
+\begin{DoxyParams}{Parameters}
+{\em none} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the datatype, most likely a float
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Precondition}
+there should be a built tree 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+the function will be solved 
+\end{DoxyPostcond}
+\hypertarget{class_expr_tree_a0e18bcfbe367fcc55eca5a7cc9179788}{\index{Expr\+Tree@{Expr\+Tree}!evaluate\+Helper@{evaluate\+Helper}}
+\index{evaluate\+Helper@{evaluate\+Helper}!Expr\+Tree@{Expr\+Tree}}
+\subsubsection[{evaluate\+Helper}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+Type $>$ Data\+Type {\bf Expr\+Tree}$<$ Data\+Type $>$\+::evaluate\+Helper (
+\begin{DoxyParamCaption}
+\item[{{\bf Expr\+Tree\+Node} $\ast$}]{ptr}
+\end{DoxyParamCaption}
+) const throw  logic\+\_\+error) \hspace{0.3cm}{\ttfamily [private]}}}\label{class_expr_tree_a0e18bcfbe367fcc55eca5a7cc9179788}
+This is the evaluate helper.
+
+evaluates the tree recusively, works its way to the bottom of the tree then solves the left and right of each individual expression 
+\begin{DoxyParams}{Parameters}
+{\em the} & current ptr, initially the root \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the datatype, most likely a float
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Precondition}
+there should be a built tree 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+the function will be solved 
+\end{DoxyPostcond}
+if it is a digit convert and return
+
+if an expression get the left and right values by recalling, then check for char and do operation \hypertarget{class_expr_tree_a0e18bcfbe367fcc55eca5a7cc9179788}{\index{Expr\+Tree@{Expr\+Tree}!evaluate\+Helper@{evaluate\+Helper}}
+\index{evaluate\+Helper@{evaluate\+Helper}!Expr\+Tree@{Expr\+Tree}}
+\subsubsection[{evaluate\+Helper}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+Type $>$ Data\+Type {\bf Expr\+Tree}$<$ Data\+Type $>$\+::evaluate\+Helper (
+\begin{DoxyParamCaption}
+\item[{{\bf Expr\+Tree\+Node} $\ast$}]{ptr}
+\end{DoxyParamCaption}
+) const throw  logic\+\_\+error) \hspace{0.3cm}{\ttfamily [private]}}}\label{class_expr_tree_a0e18bcfbe367fcc55eca5a7cc9179788}
+\hypertarget{class_expr_tree_ac367645dc4ccaf488e121cd5a0a8c07d}{\index{Expr\+Tree@{Expr\+Tree}!expression@{expression}}
+\index{expression@{expression}!Expr\+Tree@{Expr\+Tree}}
+\subsubsection[{expression}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+Type $>$ void {\bf Expr\+Tree}$<$ Data\+Type $>$\+::expression (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_expr_tree_ac367645dc4ccaf488e121cd5a0a8c07d}
+\hypertarget{class_expr_tree_ac367645dc4ccaf488e121cd5a0a8c07d}{\index{Expr\+Tree@{Expr\+Tree}!expression@{expression}}
+\index{expression@{expression}!Expr\+Tree@{Expr\+Tree}}
+\subsubsection[{expression}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+Type $>$ void {\bf Expr\+Tree}$<$ Data\+Type $>$\+::expression (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_expr_tree_ac367645dc4ccaf488e121cd5a0a8c07d}
+This is the expression function.
+
+calls the expression helper to show the function with parenthesis 
+\begin{DoxyParams}{Parameters}
+{\em none} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Precondition}
+there should be a built tree 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+the function will be displayed on the screen 
+\end{DoxyPostcond}
+\hypertarget{class_expr_tree_a7575f010e1ca9dfd2abbe15d4fe387b9}{\index{Expr\+Tree@{Expr\+Tree}!expression\+Helper@{expression\+Helper}}
+\index{expression\+Helper@{expression\+Helper}!Expr\+Tree@{Expr\+Tree}}
+\subsubsection[{expression\+Helper}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+Type $>$ void {\bf Expr\+Tree}$<$ Data\+Type $>$\+::expression\+Helper (
+\begin{DoxyParamCaption}
+\item[{{\bf Expr\+Tree\+Node} $\ast$}]{ptr}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [private]}}}\label{class_expr_tree_a7575f010e1ca9dfd2abbe15d4fe387b9}
+This is the expression helper function.
+
+prints out the function recursively, if current item is a digit will print out digit if the current item is not a digit, will print the beginning parenthesis and recalls itself for left and right 
+\begin{DoxyParams}{Parameters}
+{\em the} & ptr, initially the root \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Precondition}
+there should be a built tree 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+the function will be displayed on the screen 
+\end{DoxyPostcond}
+\hypertarget{class_expr_tree_a7575f010e1ca9dfd2abbe15d4fe387b9}{\index{Expr\+Tree@{Expr\+Tree}!expression\+Helper@{expression\+Helper}}
+\index{expression\+Helper@{expression\+Helper}!Expr\+Tree@{Expr\+Tree}}
+\subsubsection[{expression\+Helper}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+Type $>$ void {\bf Expr\+Tree}$<$ Data\+Type $>$\+::expression\+Helper (
+\begin{DoxyParamCaption}
+\item[{{\bf Expr\+Tree\+Node} $\ast$}]{ptr}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [private]}}}\label{class_expr_tree_a7575f010e1ca9dfd2abbe15d4fe387b9}
+\hypertarget{class_expr_tree_a3b534db1ad9bf8fefadb20bd1161c96b}{\index{Expr\+Tree@{Expr\+Tree}!is\+Empty@{is\+Empty}}
+\index{is\+Empty@{is\+Empty}!Expr\+Tree@{Expr\+Tree}}
+\subsubsection[{is\+Empty}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+Type $>$ bool {\bf Expr\+Tree}$<$ Data\+Type $>$\+::is\+Empty (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_expr_tree_a3b534db1ad9bf8fefadb20bd1161c96b}
+\hypertarget{class_expr_tree_adfa8f6dd2a984f83b2eb50958a0bb585}{\index{Expr\+Tree@{Expr\+Tree}!is\+Empty@{is\+Empty}}
+\index{is\+Empty@{is\+Empty}!Expr\+Tree@{Expr\+Tree}}
+\subsubsection[{is\+Empty}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Datatype $>$ bool {\bf Expr\+Tree}$<$ Datatype $>$\+::is\+Empty (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_expr_tree_adfa8f6dd2a984f83b2eb50958a0bb585}
+This is the isempty funtion.
+
+
+\begin{DoxyParams}{Parameters}
+{\em none} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if empty, false if not
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Precondition}
+an initialized tree 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+same 
+\end{DoxyPostcond}
+\hypertarget{class_expr_tree_ae64a4e3b5008fa2f533fd7461ead2485}{\index{Expr\+Tree@{Expr\+Tree}!is\+Equivalent@{is\+Equivalent}}
+\index{is\+Equivalent@{is\+Equivalent}!Expr\+Tree@{Expr\+Tree}}
+\subsubsection[{is\+Equivalent}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+Type $>$ bool {\bf Expr\+Tree}$<$ Data\+Type $>$\+::is\+Equivalent (
+\begin{DoxyParamCaption}
+\item[{const {\bf Expr\+Tree}$<$ Data\+Type $>$ \&}]{source}
+\end{DoxyParamCaption}
+) const}}\label{class_expr_tree_ae64a4e3b5008fa2f533fd7461ead2485}
+This is the is eqeuivalent function.
+
+compared two trees to see if they are the same by calling its helper 
+\begin{DoxyParams}{Parameters}
+{\em the} & tree to compare with \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool, true if the same, false if not
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Precondition}
+there should be 2 built trees 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+nothing will change 
+\end{DoxyPostcond}
+\hypertarget{class_expr_tree_ae64a4e3b5008fa2f533fd7461ead2485}{\index{Expr\+Tree@{Expr\+Tree}!is\+Equivalent@{is\+Equivalent}}
+\index{is\+Equivalent@{is\+Equivalent}!Expr\+Tree@{Expr\+Tree}}
+\subsubsection[{is\+Equivalent}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+Type $>$ bool {\bf Expr\+Tree}$<$ Data\+Type $>$\+::is\+Equivalent (
+\begin{DoxyParamCaption}
+\item[{const {\bf Expr\+Tree}$<$ Data\+Type $>$ \&}]{source}
+\end{DoxyParamCaption}
+) const}}\label{class_expr_tree_ae64a4e3b5008fa2f533fd7461ead2485}
+\hypertarget{class_expr_tree_aac6ff43c0f59106d2f137b620aeeda46}{\index{Expr\+Tree@{Expr\+Tree}!is\+Equivalent\+Help@{is\+Equivalent\+Help}}
+\index{is\+Equivalent\+Help@{is\+Equivalent\+Help}!Expr\+Tree@{Expr\+Tree}}
+\subsubsection[{is\+Equivalent\+Help}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+Type $>$ bool {\bf Expr\+Tree}$<$ Data\+Type $>$\+::is\+Equivalent\+Help (
+\begin{DoxyParamCaption}
+\item[{const {\bf Expr\+Tree\+Node} $\ast$}]{home, }
+\item[{const {\bf Expr\+Tree\+Node} $\ast$}]{source}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [private]}}}\label{class_expr_tree_aac6ff43c0f59106d2f137b620aeeda46}
+This is the is eqeuivalent helper function.
+
+compares two trees to see if they are the same recursively the 2 stopping conditions are that 1, a pointer is null (at the end) so it compares it to the other and if the same returns true and 2, if they are not the same will return false. if niether is met then calls itself twice for the left and right 
+\begin{DoxyParams}{Parameters}
+{\em the} & tree to compare with \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool, true if the same, false if not
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Precondition}
+there should be 2 built trees 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+nothing will change 
+\end{DoxyPostcond}
+if pointers are null compare them, should both be null
+
+check for equivalency, if not return false
+
+if passed other 2, then call for left and right \hypertarget{class_expr_tree_aac6ff43c0f59106d2f137b620aeeda46}{\index{Expr\+Tree@{Expr\+Tree}!is\+Equivalent\+Help@{is\+Equivalent\+Help}}
+\index{is\+Equivalent\+Help@{is\+Equivalent\+Help}!Expr\+Tree@{Expr\+Tree}}
+\subsubsection[{is\+Equivalent\+Help}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+Type $>$ bool {\bf Expr\+Tree}$<$ Data\+Type $>$\+::is\+Equivalent\+Help (
+\begin{DoxyParamCaption}
+\item[{const {\bf Expr\+Tree\+Node} $\ast$}]{home, }
+\item[{const {\bf Expr\+Tree\+Node} $\ast$}]{source}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [private]}}}\label{class_expr_tree_aac6ff43c0f59106d2f137b620aeeda46}
+\hypertarget{class_expr_tree_a9a7b2120af2c2df666b1154eec20008a}{\index{Expr\+Tree@{Expr\+Tree}!operator=@{operator=}}
+\index{operator=@{operator=}!Expr\+Tree@{Expr\+Tree}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+Type $>$ {\bf Expr\+Tree}$<$ Data\+Type $>$ \& {\bf Expr\+Tree}$<$ Data\+Type $>$\+::operator= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Expr\+Tree}$<$ Data\+Type $>$ \&}]{source}
+\end{DoxyParamCaption}
+)}}\label{class_expr_tree_a9a7b2120af2c2df666b1154eec20008a}
+This is the overloaded assignment operator, will set two trees equal to eachother Just uses the copy\+Helper function. 
+\begin{DoxyParams}{Parameters}
+{\em \hyperlink{class_expr_tree}{Expr\+Tree},the} & tree to copy to \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+returns the copied tree
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Precondition}
+there should be a tree to copy to and copy from already created 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+there will be two identical trees 
+\end{DoxyPostcond}
+check to see if the trees are the same, if they are return it
+
+if not empty, make empty
+
+if the source is empty return empty tree
+
+copy \hypertarget{class_expr_tree_a4595df38a3ddeb54994af6fced99ae03}{\index{Expr\+Tree@{Expr\+Tree}!operator=@{operator=}}
+\index{operator=@{operator=}!Expr\+Tree@{Expr\+Tree}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+Type $>$ {\bf Expr\+Tree}\& {\bf Expr\+Tree}$<$ Data\+Type $>$\+::operator= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Expr\+Tree}$<$ Data\+Type $>$ \&}]{source}
+\end{DoxyParamCaption}
+)}}\label{class_expr_tree_a4595df38a3ddeb54994af6fced99ae03}
+\hypertarget{class_expr_tree_a7f416a6fdcf60fb637c497c7665024b2}{\index{Expr\+Tree@{Expr\+Tree}!show\+Helper@{show\+Helper}}
+\index{show\+Helper@{show\+Helper}!Expr\+Tree@{Expr\+Tree}}
+\subsubsection[{show\+Helper}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+Type $>$ void {\bf Expr\+Tree}$<$ Data\+Type $>$\+::show\+Helper (
+\begin{DoxyParamCaption}
+\item[{{\bf Expr\+Tree\+Node} $\ast$}]{p, }
+\item[{int}]{level}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [private]}}}\label{class_expr_tree_a7f416a6fdcf60fb637c497c7665024b2}
+\hypertarget{class_expr_tree_a7f416a6fdcf60fb637c497c7665024b2}{\index{Expr\+Tree@{Expr\+Tree}!show\+Helper@{show\+Helper}}
+\index{show\+Helper@{show\+Helper}!Expr\+Tree@{Expr\+Tree}}
+\subsubsection[{show\+Helper}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+Type $>$ void {\bf Expr\+Tree}$<$ Data\+Type $>$\+::show\+Helper (
+\begin{DoxyParamCaption}
+\item[{{\bf Expr\+Tree\+Node} $\ast$}]{p, }
+\item[{int}]{level}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [private]}}}\label{class_expr_tree_a7f416a6fdcf60fb637c497c7665024b2}
+\hypertarget{class_expr_tree_a6f4c5e2ae8224fb53fb893231814e6d9}{\index{Expr\+Tree@{Expr\+Tree}!show\+Structure@{show\+Structure}}
+\index{show\+Structure@{show\+Structure}!Expr\+Tree@{Expr\+Tree}}
+\subsubsection[{show\+Structure}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+Type $>$ void {\bf Expr\+Tree}$<$ Data\+Type $>$\+::show\+Structure (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_expr_tree_a6f4c5e2ae8224fb53fb893231814e6d9}
+\hypertarget{class_expr_tree_a6f4c5e2ae8224fb53fb893231814e6d9}{\index{Expr\+Tree@{Expr\+Tree}!show\+Structure@{show\+Structure}}
+\index{show\+Structure@{show\+Structure}!Expr\+Tree@{Expr\+Tree}}
+\subsubsection[{show\+Structure}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+Type $>$ void {\bf Expr\+Tree}$<$ Data\+Type $>$\+::show\+Structure (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_expr_tree_a6f4c5e2ae8224fb53fb893231814e6d9}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_expr_tree_ac8638e86184df382f2dfdaf49000e34b}{\index{Expr\+Tree@{Expr\+Tree}!root@{root}}
+\index{root@{root}!Expr\+Tree@{Expr\+Tree}}
+\subsubsection[{root}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+Type $>$ {\bf Expr\+Tree\+Node} $\ast$ {\bf Expr\+Tree}$<$ Data\+Type $>$\+::root\hspace{0.3cm}{\ttfamily [private]}}}\label{class_expr_tree_ac8638e86184df382f2dfdaf49000e34b}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_expression_tree-1_8h}{Expression\+Tree-\/1.\+h}\item 
+\hyperlink{_expression_tree_8h}{Expression\+Tree.\+h}\item 
+\hyperlink{_expression_tree-1_8cpp}{Expression\+Tree-\/1.\+cpp}\item 
+\hyperlink{_expression_tree_8cpp}{Expression\+Tree.\+cpp}\item 
+\hyperlink{show8_8cpp}{show8.\+cpp}\end{DoxyCompactItemize}

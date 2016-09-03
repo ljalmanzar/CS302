@@ -1,0 +1,147 @@
+\hypertarget{pumpkin_8cpp}{\section{pumpkin.\-cpp File Reference}
+\label{pumpkin_8cpp}\index{pumpkin.\-cpp@{pumpkin.\-cpp}}
+}
+
+
+Takes \char`\"{}gardens\char`\"{} in and finds the pumpkin patches.  
+
+
+{\ttfamily \#include $<$iostream$>$}\\*
+{\ttfamily \#include $<$cstdlib$>$}\\*
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+char \hyperlink{pumpkin_8cpp_abfcc64f225d1a6462dbb01f72b1e6a51}{get\-Input} ()
+\item 
+bool \hyperlink{pumpkin_8cpp_a1b9333970cae71e69385bbe4e35abbe5}{find\-Patch} (char arr\mbox{[}$\,$\mbox{]}\mbox{[}M\-A\-X\-\_\-\-C\-O\-L\mbox{]}, int \&row, int \&col)
+\item 
+int \hyperlink{pumpkin_8cpp_aa223d4b11bdecbb8d8ce56ec98335918}{patch\-Size} (char arr\mbox{[}$\,$\mbox{]}\mbox{[}M\-A\-X\-\_\-\-C\-O\-L\mbox{]}, int row\-Ndx, int col\-Ndx)
+\item 
+void \hyperlink{pumpkin_8cpp_aacaf52ab7de05f19874897ea266edb6f}{sort} (int arr\mbox{[}$\,$\mbox{]}, int size)
+\item 
+\hypertarget{pumpkin_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{int {\bfseries main} ()}\label{pumpkin_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}
+
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{pumpkin_8cpp_a7c3e4b9d317c1c185f21effbf6c053fa}{const int {\bfseries M\-A\-X\-\_\-\-R\-O\-W} = 41}\label{pumpkin_8cpp_a7c3e4b9d317c1c185f21effbf6c053fa}
+
+\item 
+\hypertarget{pumpkin_8cpp_aa540118612c6e0181d5c0da87374ab0b}{const int {\bfseries M\-A\-X\-\_\-\-C\-O\-L} = 41}\label{pumpkin_8cpp_aa540118612c6e0181d5c0da87374ab0b}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Takes \char`\"{}gardens\char`\"{} in and finds the pumpkin patches. \begin{DoxyAuthor}{Author}
+Luis Almanzar 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1
+\end{DoxyVersion}
+Takes multiple gardens up to size 40x40 and while determain the size of the pumpkin patches inside and how many there are. \begin{DoxyDate}{Date}
+Due 9/17/14 
+\end{DoxyDate}
+
+
+\subsection{Function Documentation}
+\hypertarget{pumpkin_8cpp_a1b9333970cae71e69385bbe4e35abbe5}{\index{pumpkin.\-cpp@{pumpkin.\-cpp}!find\-Patch@{find\-Patch}}
+\index{find\-Patch@{find\-Patch}!pumpkin.cpp@{pumpkin.\-cpp}}
+\subsubsection[{find\-Patch}]{\setlength{\rightskip}{0pt plus 5cm}bool find\-Patch (
+\begin{DoxyParamCaption}
+\item[{char}]{arr\mbox{[}$\,$\mbox{]}\mbox{[}\-M\-A\-X\-\_\-\-C\-O\-L\mbox{]}, }
+\item[{int \&}]{row, }
+\item[{int \&}]{col}
+\end{DoxyParamCaption}
+)}}\label{pumpkin_8cpp_a1b9333970cae71e69385bbe4e35abbe5}
+this function will cycle through the garden array and find a pumpkin.
+
+will also change the row and col parameters to the indicies it found the p
+
+
+\begin{DoxyParams}{Parameters}
+{\em the} & char arr(garden), the row and col index to be able to return it's coordinates \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if it finds a pumpkin, false if it finds nothing
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Precondition}
+nothing 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+a patch will be found of the garden will be determined as empty 
+\end{DoxyPostcond}
+\hypertarget{pumpkin_8cpp_abfcc64f225d1a6462dbb01f72b1e6a51}{\index{pumpkin.\-cpp@{pumpkin.\-cpp}!get\-Input@{get\-Input}}
+\index{get\-Input@{get\-Input}!pumpkin.cpp@{pumpkin.\-cpp}}
+\subsubsection[{get\-Input}]{\setlength{\rightskip}{0pt plus 5cm}char get\-Input (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{pumpkin_8cpp_abfcc64f225d1a6462dbb01f72b1e6a51}
+This function will return the input of the user for the garden
+
+
+\begin{DoxyParams}{Parameters}
+{\em none} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the char (fruit)
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Precondition}
+nothing 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+there will be one more fruit in the garden 
+\end{DoxyPostcond}
+\hypertarget{pumpkin_8cpp_aa223d4b11bdecbb8d8ce56ec98335918}{\index{pumpkin.\-cpp@{pumpkin.\-cpp}!patch\-Size@{patch\-Size}}
+\index{patch\-Size@{patch\-Size}!pumpkin.cpp@{pumpkin.\-cpp}}
+\subsubsection[{patch\-Size}]{\setlength{\rightskip}{0pt plus 5cm}int patch\-Size (
+\begin{DoxyParamCaption}
+\item[{char}]{arr\mbox{[}$\,$\mbox{]}\mbox{[}\-M\-A\-X\-\_\-\-C\-O\-L\mbox{]}, }
+\item[{int}]{row\-Ndx, }
+\item[{int}]{col\-Ndx}
+\end{DoxyParamCaption}
+)}}\label{pumpkin_8cpp_aa223d4b11bdecbb8d8ce56ec98335918}
+will determine how large a found patch extends
+
+
+\begin{DoxyParams}{Parameters}
+{\em the} & char arr(garden), coordinates of the found patch \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the final return will be the size of the patch
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Precondition}
+there must be a garden already and a patch must be found 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+the patch will have its size 
+\end{DoxyPostcond}
+\hypertarget{pumpkin_8cpp_aacaf52ab7de05f19874897ea266edb6f}{\index{pumpkin.\-cpp@{pumpkin.\-cpp}!sort@{sort}}
+\index{sort@{sort}!pumpkin.cpp@{pumpkin.\-cpp}}
+\subsubsection[{sort}]{\setlength{\rightskip}{0pt plus 5cm}void sort (
+\begin{DoxyParamCaption}
+\item[{int}]{arr\mbox{[}$\,$\mbox{]}, }
+\item[{int}]{size}
+\end{DoxyParamCaption}
+)}}\label{pumpkin_8cpp_aacaf52ab7de05f19874897ea266edb6f}
+This function just sorts
+
+
+\begin{DoxyParams}{Parameters}
+{\em an} & array of integers and the size of the array \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+This function is a void.
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Precondition}
+The array will be unsorted 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+The array will be sorted 
+\end{DoxyPostcond}

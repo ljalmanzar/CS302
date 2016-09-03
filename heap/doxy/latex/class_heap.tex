@@ -1,0 +1,416 @@
+\hypertarget{class_heap}{\section{Heap$<$ Data\+Type, Key\+Type, Comparator $>$ Class Template Reference}
+\label{class_heap}\index{Heap$<$ Data\+Type, Key\+Type, Comparator $>$@{Heap$<$ Data\+Type, Key\+Type, Comparator $>$}}
+}
+
+
+{\ttfamily \#include $<$Heap.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_heap_ae17e34e3c86d88263a8fdf80b9ba78fc}{Heap} (int max\+Number=\hyperlink{class_heap_a967c19732a20a72e8e824402ad6763c8}{D\+E\+F\+A\+U\+L\+T\+\_\+\+M\+A\+X\+\_\+\+H\+E\+A\+P\+\_\+\+S\+I\+Z\+E})
+\item 
+\hyperlink{class_heap_a97e3b462be1c6af31d7519546bba8907}{Heap} (const \hyperlink{class_heap}{Heap} \&other)
+\item 
+\hyperlink{class_heap}{Heap} \& \hyperlink{class_heap_a5ed119341c39bcea1437321d4247dd40}{operator=} (const \hyperlink{class_heap}{Heap} \&other)
+\item 
+\hyperlink{class_heap_a555ade7891007de959bef0ee53e28767}{$\sim$\+Heap} ()
+\item 
+void \hyperlink{class_heap_aa68cf80454ab1b246fa723612805a91e}{insert} (const Data\+Type \&new\+Data\+Item)  throw ( logic\+\_\+error )
+\item 
+Data\+Type \hyperlink{class_heap_a4a18bfdacd897c45fc3da13f22b8930d}{remove} ()  throw ( logic\+\_\+error )
+\item 
+void \hyperlink{class_heap_a19a78c8eae2cf7c8253e34e54d86ed73}{clear} ()
+\item 
+int \hyperlink{class_heap_a6eee71300439f0d11cb8b3e7733fae23}{leftchild} (int i)
+\item 
+int \hyperlink{class_heap_ad7e6fc0f424633c3558b8b3e428a11d9}{rightchild} (int i)
+\item 
+int \hyperlink{class_heap_aa599eede8d07fbb74454ea9a81d0e735}{parentof} (int i)
+\item 
+bool \hyperlink{class_heap_ab8fa26d416ac0e27dfcbf18c54f8f73f}{is\+Empty} () const 
+\item 
+bool \hyperlink{class_heap_ac9111b884c74a376240e0155a788756e}{is\+Full} () const 
+\item 
+void \hyperlink{class_heap_a434f61cb55ab57148384188c5b1a2348}{swap} (int i, int n)
+\item 
+void \hyperlink{class_heap_a3ae1e1f27a145749c8b9f2da777cb8bc}{show\+Structure} () const 
+\item 
+void \hyperlink{class_heap_a4bdb1772ea92899de245d6cbd217d085}{write\+Levels} () const 
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const int \hyperlink{class_heap_a967c19732a20a72e8e824402ad6763c8}{D\+E\+F\+A\+U\+L\+T\+\_\+\+M\+A\+X\+\_\+\+H\+E\+A\+P\+\_\+\+S\+I\+Z\+E} = 10
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_heap_ae17e34e3c86d88263a8fdf80b9ba78fc}{\index{Heap@{Heap}!Heap@{Heap}}
+\index{Heap@{Heap}!Heap@{Heap}}
+\subsubsection[{Heap}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+Type , typename Key\+Type , typename Comparator $>$ {\bf Heap}$<$ Data\+Type, Key\+Type, Comparator $>$\+::{\bf Heap} (
+\begin{DoxyParamCaption}
+\item[{int}]{max\+Number = {\ttfamily {\bf D\+E\+F\+A\+U\+L\+T\+\_\+\+M\+A\+X\+\_\+\+H\+E\+A\+P\+\_\+\+S\+I\+Z\+E}}}
+\end{DoxyParamCaption}
+)}}\label{class_heap_ae17e34e3c86d88263a8fdf80b9ba78fc}
+Default constructor for the heap
+
+allocates the memory for the heap of the appropriate size. saves the max size and initializes size to 0. 
+\begin{DoxyParams}{Parameters}
+{\em None.} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Constructor.
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Precondition}
+None. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Initialized. 
+\end{DoxyPostcond}
+allocate the new memory
+
+save max size
+
+set actual size right now \hypertarget{class_heap_a97e3b462be1c6af31d7519546bba8907}{\index{Heap@{Heap}!Heap@{Heap}}
+\index{Heap@{Heap}!Heap@{Heap}}
+\subsubsection[{Heap}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+Type , typename Key\+Type , typename Comparator $>$ {\bf Heap}$<$ Data\+Type, Key\+Type, Comparator $>$\+::{\bf Heap} (
+\begin{DoxyParamCaption}
+\item[{const {\bf Heap}$<$ Data\+Type, Key\+Type, Comparator $>$ \&}]{other}
+\end{DoxyParamCaption}
+)}}\label{class_heap_a97e3b462be1c6af31d7519546bba8907}
+Copy constructor for the heap
+
+Copies max size from the source and allocates memory for that size. Then copies sets the two heaps equal to eachother. 
+\begin{DoxyParams}{Parameters}
+{\em A} & heap to copy from. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Constructor.
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Precondition}
+Heaps created. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Two equivalent heaps. 
+\end{DoxyPostcond}
+copy size
+
+allocate the memory
+
+copy \hypertarget{class_heap_a555ade7891007de959bef0ee53e28767}{\index{Heap@{Heap}!````~Heap@{$\sim$\+Heap}}
+\index{````~Heap@{$\sim$\+Heap}!Heap@{Heap}}
+\subsubsection[{$\sim$\+Heap}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+Type , typename Key\+Type , typename Comparator $>$ {\bf Heap}$<$ Data\+Type, Key\+Type, Comparator $>$\+::$\sim${\bf Heap} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_heap_a555ade7891007de959bef0ee53e28767}
+Destructor
+
+Deallocates the memory or array. 
+\begin{DoxyParams}{Parameters}
+{\em None.} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Destructor.
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Precondition}
+Array initialized. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Memory released. 
+\end{DoxyPostcond}
+delete 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_heap_a19a78c8eae2cf7c8253e34e54d86ed73}{\index{Heap@{Heap}!clear@{clear}}
+\index{clear@{clear}!Heap@{Heap}}
+\subsubsection[{clear}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+Type , typename Key\+Type , typename Comparator $>$ void {\bf Heap}$<$ Data\+Type, Key\+Type, Comparator $>$\+::clear (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_heap_a19a78c8eae2cf7c8253e34e54d86ed73}
+Clears the heap.
+
+Makes size 0. 
+\begin{DoxyParams}{Parameters}
+{\em none.} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void. 
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Precondition}
+\hyperlink{class_heap}{Heap} initialized. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Empty heap. 
+\end{DoxyPostcond}
+\hypertarget{class_heap_aa68cf80454ab1b246fa723612805a91e}{\index{Heap@{Heap}!insert@{insert}}
+\index{insert@{insert}!Heap@{Heap}}
+\subsubsection[{insert}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+Type, typename Key\+Type , typename Comparator $>$ void {\bf Heap}$<$ Data\+Type, Key\+Type, Comparator $>$\+::insert (
+\begin{DoxyParamCaption}
+\item[{const Data\+Type \&}]{new\+Data\+Item}
+\end{DoxyParamCaption}
+) throw  logic\+\_\+error) }}\label{class_heap_aa68cf80454ab1b246fa723612805a91e}
+Inserts new item.
+
+inserts newest item to end of the array then checks the parent to see if it is bigger. if it is, they get swapped and then that repeats until the parent is not smaller. 
+\begin{DoxyParams}{Parameters}
+{\em item} & to insert. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em if} & it is full throw error\\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyPrecond}{Precondition}
+\hyperlink{class_heap}{Heap} initialized. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+New item inserted. 
+\end{DoxyPostcond}
+check if full
+
+insert
+
+work through its parents to see if it is a max heap set indecies
+
+check if inserted if larger than parent \hypertarget{class_heap_ab8fa26d416ac0e27dfcbf18c54f8f73f}{\index{Heap@{Heap}!is\+Empty@{is\+Empty}}
+\index{is\+Empty@{is\+Empty}!Heap@{Heap}}
+\subsubsection[{is\+Empty}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+Type , typename Key\+Type , typename Comparator $>$ bool {\bf Heap}$<$ Data\+Type, Key\+Type, Comparator $>$\+::is\+Empty (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_heap_ab8fa26d416ac0e27dfcbf18c54f8f73f}
+Is Empty.
+
+If the size if 0 then it is empty. 
+\begin{DoxyParams}{Parameters}
+{\em none.} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if empty. False if not.
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Precondition}
+\hyperlink{class_heap}{Heap} initialized. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Nothing different. 
+\end{DoxyPostcond}
+\hypertarget{class_heap_ac9111b884c74a376240e0155a788756e}{\index{Heap@{Heap}!is\+Full@{is\+Full}}
+\index{is\+Full@{is\+Full}!Heap@{Heap}}
+\subsubsection[{is\+Full}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+Type , typename Key\+Type , typename Comparator $>$ bool {\bf Heap}$<$ Data\+Type, Key\+Type, Comparator $>$\+::is\+Full (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_heap_ac9111b884c74a376240e0155a788756e}
+Is Full.
+
+If size is equal to the max size of the heap, then the heap is full. 
+\begin{DoxyParams}{Parameters}
+{\em none.} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if full. False if not. 
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Precondition}
+\hyperlink{class_heap}{Heap} initialized. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Nothing different. 
+\end{DoxyPostcond}
+\hypertarget{class_heap_a6eee71300439f0d11cb8b3e7733fae23}{\index{Heap@{Heap}!leftchild@{leftchild}}
+\index{leftchild@{leftchild}!Heap@{Heap}}
+\subsubsection[{leftchild}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+Type , typename Key\+Type , typename Comparator $>$ int {\bf Heap}$<$ Data\+Type, Key\+Type, Comparator $>$\+::leftchild (
+\begin{DoxyParamCaption}
+\item[{int}]{i}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_heap_a6eee71300439f0d11cb8b3e7733fae23}
+the left child is known to be store at the equation in the function. 
+\begin{DoxyParams}{Parameters}
+{\em The} & index of which you want the left child. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The index of the left child of the param. 
+\end{DoxyReturn}
+\hypertarget{class_heap_a5ed119341c39bcea1437321d4247dd40}{\index{Heap@{Heap}!operator=@{operator=}}
+\index{operator=@{operator=}!Heap@{Heap}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+Type , typename Key\+Type , typename Comparator $>$ {\bf Heap}$<$ Data\+Type, Key\+Type, Comparator $>$ \& {\bf Heap}$<$ Data\+Type, Key\+Type, Comparator $>$\+::operator= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Heap}$<$ Data\+Type, Key\+Type, Comparator $>$ \&}]{other}
+\end{DoxyParamCaption}
+)}}\label{class_heap_a5ed119341c39bcea1437321d4247dd40}
+Overloaded assigment operator.
+
+Checks if the heaps are the same. If they are returns it. Then sees if the sizes are the same. If they aren't, copies them then deletes current memory allocated then allocates new memory. Lastly copies items from the source array to the home array. Copies size and returns. 
+\begin{DoxyParams}{Parameters}
+{\em \hyperlink{class_heap}{Heap}} & to copy from. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Copied heap.
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Precondition}
+Two heaps. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Heaps will be equal. 
+\end{DoxyPostcond}
+check equality
+
+make same size array
+
+copy items
+
+copy size
+
+return \hypertarget{class_heap_aa599eede8d07fbb74454ea9a81d0e735}{\index{Heap@{Heap}!parentof@{parentof}}
+\index{parentof@{parentof}!Heap@{Heap}}
+\subsubsection[{parentof}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+Type , typename Key\+Type , typename Comparator $>$ int {\bf Heap}$<$ Data\+Type, Key\+Type, Comparator $>$\+::parentof (
+\begin{DoxyParamCaption}
+\item[{int}]{i}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_heap_aa599eede8d07fbb74454ea9a81d0e735}
+the parent is known to be store at the equation in the function. 
+\begin{DoxyParams}{Parameters}
+{\em The} & index of which you want the parent. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The index of the parent of the child in the param. 
+\end{DoxyReturn}
+\hypertarget{class_heap_a4a18bfdacd897c45fc3da13f22b8930d}{\index{Heap@{Heap}!remove@{remove}}
+\index{remove@{remove}!Heap@{Heap}}
+\subsubsection[{remove}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+Type , typename Key\+Type , typename Comparator $>$ Data\+Type {\bf Heap}$<$ Data\+Type, Key\+Type, Comparator $>$\+::remove (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) throw  logic\+\_\+error) }}\label{class_heap_a4a18bfdacd897c45fc3da13f22b8930d}
+Removes highest priority item.
+
+saves highest item in a temp and inserts last item into the first item. then compares the item to it's children, gets the larger of the children then swaps if the parent is smaller. this repeats until the end of the heap is reached. 
+\begin{DoxyParams}{Parameters}
+{\em none.} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em if} & it is empty throw error\\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyPrecond}{Precondition}
+\hyperlink{class_heap}{Heap} initialized. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+front item removed. 
+\end{DoxyPostcond}
+if empty throw error
+
+save top item
+
+put last item to the front
+
+compare the two children
+
+if left is bigger swap
+
+swaps
+
+update index to where we moved
+
+update size
+
+return removed item \hypertarget{class_heap_ad7e6fc0f424633c3558b8b3e428a11d9}{\index{Heap@{Heap}!rightchild@{rightchild}}
+\index{rightchild@{rightchild}!Heap@{Heap}}
+\subsubsection[{rightchild}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+Type , typename Key\+Type , typename Comparator $>$ int {\bf Heap}$<$ Data\+Type, Key\+Type, Comparator $>$\+::rightchild (
+\begin{DoxyParamCaption}
+\item[{int}]{i}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_heap_ad7e6fc0f424633c3558b8b3e428a11d9}
+the right child is known to be store at the equation in the function. 
+\begin{DoxyParams}{Parameters}
+{\em The} & index of which you want the right child. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The index of the right child of the param. 
+\end{DoxyReturn}
+\hypertarget{class_heap_a3ae1e1f27a145749c8b9f2da777cb8bc}{\index{Heap@{Heap}!show\+Structure@{show\+Structure}}
+\index{show\+Structure@{show\+Structure}!Heap@{Heap}}
+\subsubsection[{show\+Structure}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+Type , typename Key\+Type , typename Comparator $>$ void {\bf Heap}$<$ Data\+Type, Key\+Type, Comparator $>$\+::show\+Structure (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_heap_a3ae1e1f27a145749c8b9f2da777cb8bc}
+\hypertarget{class_heap_a434f61cb55ab57148384188c5b1a2348}{\index{Heap@{Heap}!swap@{swap}}
+\index{swap@{swap}!Heap@{Heap}}
+\subsubsection[{swap}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+Type , typename Key\+Type , typename Comparator $>$ void {\bf Heap}$<$ Data\+Type, Key\+Type, Comparator $>$\+::swap (
+\begin{DoxyParamCaption}
+\item[{int}]{i, }
+\item[{int}]{n}
+\end{DoxyParamCaption}
+)}}\label{class_heap_a434f61cb55ab57148384188c5b1a2348}
+Simple swap of the items at the given indicies. 
+\begin{DoxyParams}{Parameters}
+{\em The} & indicies you want swapped. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Void. 
+\end{DoxyReturn}
+\hypertarget{class_heap_a4bdb1772ea92899de245d6cbd217d085}{\index{Heap@{Heap}!write\+Levels@{write\+Levels}}
+\index{write\+Levels@{write\+Levels}!Heap@{Heap}}
+\subsubsection[{write\+Levels}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+Type , typename Key\+Type , typename Comparator $>$ void {\bf Heap}$<$ Data\+Type, Key\+Type, Comparator $>$\+::write\+Levels (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_heap_a4bdb1772ea92899de245d6cbd217d085}
+Prints heap by level.
+
+Prints out 2$^\wedge$n number of items, n being the number of the row (starting at zero), then inserts endl. This will repeat in a loop, every loop will print out a row. 
+\begin{DoxyParams}{Parameters}
+{\em none.} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void.
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Precondition}
+\hyperlink{class_heap}{Heap} initialized. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Nothing changes. 
+\end{DoxyPostcond}
+check if empty
+
+for row N, print out all items
+
+end the line
+
+go to next row 
+
+\subsection{Member Data Documentation}
+\hypertarget{class_heap_a967c19732a20a72e8e824402ad6763c8}{\index{Heap@{Heap}!D\+E\+F\+A\+U\+L\+T\+\_\+\+M\+A\+X\+\_\+\+H\+E\+A\+P\+\_\+\+S\+I\+Z\+E@{D\+E\+F\+A\+U\+L\+T\+\_\+\+M\+A\+X\+\_\+\+H\+E\+A\+P\+\_\+\+S\+I\+Z\+E}}
+\index{D\+E\+F\+A\+U\+L\+T\+\_\+\+M\+A\+X\+\_\+\+H\+E\+A\+P\+\_\+\+S\+I\+Z\+E@{D\+E\+F\+A\+U\+L\+T\+\_\+\+M\+A\+X\+\_\+\+H\+E\+A\+P\+\_\+\+S\+I\+Z\+E}!Heap@{Heap}}
+\subsubsection[{D\+E\+F\+A\+U\+L\+T\+\_\+\+M\+A\+X\+\_\+\+H\+E\+A\+P\+\_\+\+S\+I\+Z\+E}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+Type, typename Key\+Type  = int, typename Comparator  = Less$<$\+Key\+Type$>$$>$ const int {\bf Heap}$<$ Data\+Type, Key\+Type, Comparator $>$\+::D\+E\+F\+A\+U\+L\+T\+\_\+\+M\+A\+X\+\_\+\+H\+E\+A\+P\+\_\+\+S\+I\+Z\+E = 10\hspace{0.3cm}{\ttfamily [static]}}}\label{class_heap_a967c19732a20a72e8e824402ad6763c8}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_heap_8h}{Heap.\+h}\item 
+\hyperlink{_heap_8cpp}{Heap.\+cpp}\item 
+\hyperlink{show11_8cpp}{show11.\+cpp}\end{DoxyCompactItemize}

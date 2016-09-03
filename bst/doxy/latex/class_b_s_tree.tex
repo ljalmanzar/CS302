@@ -1,0 +1,618 @@
+\hypertarget{class_b_s_tree}{\section{B\+S\+Tree$<$ Data\+Type, Key\+Type $>$ Class Template Reference}
+\label{class_b_s_tree}\index{B\+S\+Tree$<$ Data\+Type, Key\+Type $>$@{B\+S\+Tree$<$ Data\+Type, Key\+Type $>$}}
+}
+
+
+{\ttfamily \#include $<$B\+S\+Tree.\+h$>$}
+
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_b_s_tree_1_1_b_s_tree_node}{B\+S\+Tree\+Node}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_b_s_tree_a4513fc6697f5e51bff8e7c448b446c9e}{B\+S\+Tree} ()
+\item 
+\hyperlink{class_b_s_tree_a6658391c178cb35858c9c465e1839fb0}{B\+S\+Tree} (const \hyperlink{class_b_s_tree}{B\+S\+Tree}$<$ Data\+Type, Key\+Type $>$ \&other)
+\item 
+\hyperlink{class_b_s_tree}{B\+S\+Tree} \& \hyperlink{class_b_s_tree_ac36b0b564aa3c411c239d730f506f448}{operator=} (const \hyperlink{class_b_s_tree}{B\+S\+Tree}$<$ Data\+Type, Key\+Type $>$ \&other)
+\item 
+\hyperlink{class_b_s_tree_a968c51c539f4ae41357c78b6a60fea4c}{$\sim$\+B\+S\+Tree} ()
+\item 
+void \hyperlink{class_b_s_tree_ab86b4cea496ee53076021126423d51fd}{insert} (const Data\+Type \&new\+Data\+Item)
+\item 
+bool \hyperlink{class_b_s_tree_a4359bfee390669b5adaf0380ef62b18d}{retrieve} (const Key\+Type \&search\+Key, Data\+Type \&search\+Data\+Item) const 
+\item 
+bool \hyperlink{class_b_s_tree_a755549f7b88d0178a96ca84afd5e04cf}{remove} (const Key\+Type \&delete\+Key)
+\item 
+void \hyperlink{class_b_s_tree_a7f08f48e6d1bbe3eb726856a947325e7}{write\+Keys} () const 
+\item 
+void \hyperlink{class_b_s_tree_a926822d08f3d0321603f9fafd2254b16}{clear} ()
+\item 
+bool \hyperlink{class_b_s_tree_a43768375369ca8fe641a86451997ad45}{is\+Empty} () const 
+\item 
+void \hyperlink{class_b_s_tree_ac28277cacbf8ab33326473a419abf097}{show\+Structure} () const 
+\item 
+int \hyperlink{class_b_s_tree_a3850adc6b8ae965ec11ec0e0567b6f7d}{get\+Height} () const 
+\item 
+int \hyperlink{class_b_s_tree_a880d98553153533d3c29504e8a272c7d}{get\+Count} () const 
+\item 
+void \hyperlink{class_b_s_tree_a92079e5301185f41eebe1c32c2357258}{write\+Less\+Than} (const Key\+Type \&search\+Key) const 
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_b_s_tree_a44b3002e3476eb410468a4b9aaaa73ef}{show\+Helper} (\hyperlink{class_b_s_tree_1_1_b_s_tree_node}{B\+S\+Tree\+Node} $\ast$p, int level) const 
+\item 
+void \hyperlink{class_b_s_tree_ac0f54ec6e60536aafa6e3130968e4858}{insert\+Helper} (\hyperlink{class_b_s_tree_1_1_b_s_tree_node}{B\+S\+Tree\+Node} $\ast$\&location, const Data\+Type \&new\+Data\+Item)
+\item 
+bool \hyperlink{class_b_s_tree_aae2944702e1c5fe498b8fd93a2c28dab}{retrieve\+Helper} (\hyperlink{class_b_s_tree_1_1_b_s_tree_node}{B\+S\+Tree\+Node} $\ast$location, const Key\+Type \&search\+Key, Data\+Type \&search\+Data\+Item) const 
+\item 
+bool \hyperlink{class_b_s_tree_a11efb310116399fde0c83c6991a37f7d}{remove\+Helper} (\hyperlink{class_b_s_tree_1_1_b_s_tree_node}{B\+S\+Tree\+Node} $\ast$\&location, const Key\+Type \&delete\+Key)
+\item 
+void \hyperlink{class_b_s_tree_a36adcef767ab5a35a9de275aef841d9c}{write\+Keys\+Helper} (\hyperlink{class_b_s_tree_1_1_b_s_tree_node}{B\+S\+Tree\+Node} $\ast$location) const 
+\item 
+void \hyperlink{class_b_s_tree_a686803ea42d32427487652d229353846}{clear\+Helper} (\hyperlink{class_b_s_tree_1_1_b_s_tree_node}{B\+S\+Tree\+Node} $\ast$\&location)
+\item 
+int \hyperlink{class_b_s_tree_a7fef36c2ff90833730980767afbe3735}{height\+Helper} (\hyperlink{class_b_s_tree_1_1_b_s_tree_node}{B\+S\+Tree\+Node} $\ast$location) const 
+\item 
+int \hyperlink{class_b_s_tree_aad81734b14dcf5a934965b54391e4f7a}{count\+Helper} (\hyperlink{class_b_s_tree_1_1_b_s_tree_node}{B\+S\+Tree\+Node} $\ast$location) const 
+\item 
+void \hyperlink{class_b_s_tree_aa38d3e51bdc88701cc2db1913c3b6065}{copy\+Help} (\hyperlink{class_b_s_tree_1_1_b_s_tree_node}{B\+S\+Tree\+Node} $\ast$\&home, \hyperlink{class_b_s_tree_1_1_b_s_tree_node}{B\+S\+Tree\+Node} $\ast$R\+H\+S)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_b_s_tree_1_1_b_s_tree_node}{B\+S\+Tree\+Node} $\ast$ \hyperlink{class_b_s_tree_a83534afce9094181ac031f9f596a8625}{root}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_b_s_tree_a4513fc6697f5e51bff8e7c448b446c9e}{\index{B\+S\+Tree@{B\+S\+Tree}!B\+S\+Tree@{B\+S\+Tree}}
+\index{B\+S\+Tree@{B\+S\+Tree}!B\+S\+Tree@{B\+S\+Tree}}
+\subsubsection[{B\+S\+Tree}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+Type , class Key\+Type $>$ {\bf B\+S\+Tree}$<$ Data\+Type, Key\+Type $>$\+::{\bf B\+S\+Tree} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_b_s_tree_a4513fc6697f5e51bff8e7c448b446c9e}
+The default B\+S\+T constuctor.
+
+Just initializes a new B\+S\+T tree by setting its root to N\+U\+L\+L. 
+\begin{DoxyParams}{Parameters}
+{\em None.} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Constructor.
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Precondition}
+None. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+There is a new initialized tree. 
+\end{DoxyPostcond}
+\hypertarget{class_b_s_tree_a6658391c178cb35858c9c465e1839fb0}{\index{B\+S\+Tree@{B\+S\+Tree}!B\+S\+Tree@{B\+S\+Tree}}
+\index{B\+S\+Tree@{B\+S\+Tree}!B\+S\+Tree@{B\+S\+Tree}}
+\subsubsection[{B\+S\+Tree}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+Type , class Key\+Type $>$ {\bf B\+S\+Tree}$<$ Data\+Type, Key\+Type $>$\+::{\bf B\+S\+Tree} (
+\begin{DoxyParamCaption}
+\item[{const {\bf B\+S\+Tree}$<$ Data\+Type, Key\+Type $>$ \&}]{source}
+\end{DoxyParamCaption}
+)}}\label{class_b_s_tree_a6658391c178cb35858c9c465e1839fb0}
+This is the copy constructor.
+
+Will create a new B\+S\+T tree with the data from the parameter. Uses the overloaded assignment operator. 
+\begin{DoxyParams}{Parameters}
+{\em Another} & B\+S\+T to copy from. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Constructor.
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Precondition}
+There should be one tree already initialized. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+There will be two identical trees. 
+\end{DoxyPostcond}
+\hypertarget{class_b_s_tree_a968c51c539f4ae41357c78b6a60fea4c}{\index{B\+S\+Tree@{B\+S\+Tree}!````~B\+S\+Tree@{$\sim$\+B\+S\+Tree}}
+\index{````~B\+S\+Tree@{$\sim$\+B\+S\+Tree}!B\+S\+Tree@{B\+S\+Tree}}
+\subsubsection[{$\sim$\+B\+S\+Tree}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+Type , class Key\+Type $>$ {\bf B\+S\+Tree}$<$ Data\+Type, Key\+Type $>$\+::$\sim${\bf B\+S\+Tree} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_b_s_tree_a968c51c539f4ae41357c78b6a60fea4c}
+This is the tree destructor.
+
+Deallocates all the memory of the tree by calling the clear function (details of that in function) 
+\begin{DoxyParams}{Parameters}
+{\em None} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Destructor.
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Precondition}
+There should be an initialized tree. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+All memory will be deallocated. 
+\end{DoxyPostcond}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_b_s_tree_a926822d08f3d0321603f9fafd2254b16}{\index{B\+S\+Tree@{B\+S\+Tree}!clear@{clear}}
+\index{clear@{clear}!B\+S\+Tree@{B\+S\+Tree}}
+\subsubsection[{clear}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+Type , class Key\+Type $>$ void {\bf B\+S\+Tree}$<$ Data\+Type, Key\+Type $>$\+::clear (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_b_s_tree_a926822d08f3d0321603f9fafd2254b16}
+This is the function that will deallocate all memory of the B\+S\+T.
+
+Calls its helper then sets the root to N\+U\+L\+L. 
+\begin{DoxyParams}{Parameters}
+{\em None.} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Precondition}
+there should an initialized tree. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+there will be an empty tree. 
+\end{DoxyPostcond}
+\hypertarget{class_b_s_tree_a686803ea42d32427487652d229353846}{\index{B\+S\+Tree@{B\+S\+Tree}!clear\+Helper@{clear\+Helper}}
+\index{clear\+Helper@{clear\+Helper}!B\+S\+Tree@{B\+S\+Tree}}
+\subsubsection[{clear\+Helper}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+Type , class Key\+Type $>$ void {\bf B\+S\+Tree}$<$ Data\+Type, Key\+Type $>$\+::clear\+Helper (
+\begin{DoxyParamCaption}
+\item[{{\bf B\+S\+Tree\+Node} $\ast$\&}]{location}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_b_s_tree_a686803ea42d32427487652d229353846}
+This is the function that will recursively deallocate all memory.
+
+If the the tree is not empty, goes down all nodes on the left, checks if they have a right child. If they do recalls. If they dont, they get deleted. 
+\begin{DoxyParams}{Parameters}
+{\em Expr\+Tree,the} & tree to copy to and copy from \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Precondition}
+there should two initialized trees 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+there will be two identical trees 
+\end{DoxyPostcond}
+if there is more to the left recall with child
+
+if leftmost has a right child repeat process with the right child
+
+deallocate \hypertarget{class_b_s_tree_aa38d3e51bdc88701cc2db1913c3b6065}{\index{B\+S\+Tree@{B\+S\+Tree}!copy\+Help@{copy\+Help}}
+\index{copy\+Help@{copy\+Help}!B\+S\+Tree@{B\+S\+Tree}}
+\subsubsection[{copy\+Help}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+Type , class Key\+Type $>$ void {\bf B\+S\+Tree}$<$ Data\+Type, Key\+Type $>$\+::copy\+Help (
+\begin{DoxyParamCaption}
+\item[{{\bf B\+S\+Tree\+Node} $\ast$\&}]{home, }
+\item[{{\bf B\+S\+Tree\+Node} $\ast$}]{R\+H\+S}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_b_s_tree_aa38d3e51bdc88701cc2db1913c3b6065}
+This is the function that will recursively copy two trees to eachother.
+
+Checks if the current Node from the tree to copy from is N\+U\+L\+L. If it is, then will end. If the Node is not null will create a new node for the L\+H\+S tree with the same data then call itself for the left and right side of that node. Stopping condition is until they reach the end of R\+H\+S. 
+\begin{DoxyParams}{Parameters}
+{\em Will} & take in two B\+S\+T Node pointers. One from each Tree. Should be corresponding. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Void.
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Precondition}
+There should two initialized trees. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+There will be two identical trees. 
+\end{DoxyPostcond}
+Stopping condition, end of tree
+
+Create node
+
+Recall with the other parts of the tree \hypertarget{class_b_s_tree_aad81734b14dcf5a934965b54391e4f7a}{\index{B\+S\+Tree@{B\+S\+Tree}!count\+Helper@{count\+Helper}}
+\index{count\+Helper@{count\+Helper}!B\+S\+Tree@{B\+S\+Tree}}
+\subsubsection[{count\+Helper}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+Type , class Key\+Type $>$ int {\bf B\+S\+Tree}$<$ Data\+Type, Key\+Type $>$\+::count\+Helper (
+\begin{DoxyParamCaption}
+\item[{{\bf B\+S\+Tree\+Node} $\ast$}]{location}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_b_s_tree_aad81734b14dcf5a934965b54391e4f7a}
+This is the function that will recursively count the number of items in the tree.
+
+Basically adds one and recalls for the left and right every time a node is not N\+U\+L\+L. If N\+U\+L\+L then just adds 0. 
+\begin{DoxyParams}{Parameters}
+{\em B\+S\+T} & node, location. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Int, the amount of nodes.
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Precondition}
+there should an initialized tree. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+tree will be counted. 
+\end{DoxyPostcond}
+\hypertarget{class_b_s_tree_a880d98553153533d3c29504e8a272c7d}{\index{B\+S\+Tree@{B\+S\+Tree}!get\+Count@{get\+Count}}
+\index{get\+Count@{get\+Count}!B\+S\+Tree@{B\+S\+Tree}}
+\subsubsection[{get\+Count}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+Type , class Key\+Type $>$ int {\bf B\+S\+Tree}$<$ Data\+Type, Key\+Type $>$\+::get\+Count (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_b_s_tree_a880d98553153533d3c29504e8a272c7d}
+This is the function counts the total amount of nodes in the B\+S\+T.
+
+calls the helper. 
+\begin{DoxyParams}{Parameters}
+{\em None.} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Int, the amount of nodes.
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Precondition}
+there should an initialized tree. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+number of nodes will be returned. 
+\end{DoxyPostcond}
+\hypertarget{class_b_s_tree_a3850adc6b8ae965ec11ec0e0567b6f7d}{\index{B\+S\+Tree@{B\+S\+Tree}!get\+Height@{get\+Height}}
+\index{get\+Height@{get\+Height}!B\+S\+Tree@{B\+S\+Tree}}
+\subsubsection[{get\+Height}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+Type , class Key\+Type $>$ int {\bf B\+S\+Tree}$<$ Data\+Type, Key\+Type $>$\+::get\+Height (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_b_s_tree_a3850adc6b8ae965ec11ec0e0567b6f7d}
+This is the function that will get the height of the tree.
+
+Checks if the tree is empty. If it is, returns 0 for height. If it isnt, calls the helper. 
+\begin{DoxyParams}{Parameters}
+{\em None.} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Int, height of the tree.
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Precondition}
+there should an initialized tree. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+the height will be returned. 
+\end{DoxyPostcond}
+\hypertarget{class_b_s_tree_a7fef36c2ff90833730980767afbe3735}{\index{B\+S\+Tree@{B\+S\+Tree}!height\+Helper@{height\+Helper}}
+\index{height\+Helper@{height\+Helper}!B\+S\+Tree@{B\+S\+Tree}}
+\subsubsection[{height\+Helper}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+Type , class Key\+Type $>$ int {\bf B\+S\+Tree}$<$ Data\+Type, Key\+Type $>$\+::height\+Helper (
+\begin{DoxyParamCaption}
+\item[{{\bf B\+S\+Tree\+Node} $\ast$}]{location}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_b_s_tree_a7fef36c2ff90833730980767afbe3735}
+This is the function that will recursively check for the height of the tree.
+
+If reached the end returns 0, Otherwise keeps calling itself for the size of both the left and right part. 
+\begin{DoxyParams}{Parameters}
+{\em B\+S\+T} & node. Current location. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Int for the height.
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Precondition}
+there should an initialized tree. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+height will be returned 
+\end{DoxyPostcond}
+if we reached a null spot, return 0 since nothing is added
+
+get the size of the left and right by recalling and going to the left and right
+
+return which ever is larger plus one since the current node is part of the height \hypertarget{class_b_s_tree_ab86b4cea496ee53076021126423d51fd}{\index{B\+S\+Tree@{B\+S\+Tree}!insert@{insert}}
+\index{insert@{insert}!B\+S\+Tree@{B\+S\+Tree}}
+\subsubsection[{insert}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+Type , class Key\+Type $>$ void {\bf B\+S\+Tree}$<$ Data\+Type, Key\+Type $>$\+::insert (
+\begin{DoxyParamCaption}
+\item[{const Data\+Type \&}]{new\+Data\+Item}
+\end{DoxyParamCaption}
+)}}\label{class_b_s_tree_ab86b4cea496ee53076021126423d51fd}
+This is the function that will insert a new item into the tree.
+
+Inserts new data by calling its helper. Details will be there. 
+\begin{DoxyParams}{Parameters}
+{\em The} & new data. Could be of different types. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Precondition}
+there should an initialized tree. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+there will be another item in the tree with correct positioning. 
+\end{DoxyPostcond}
+\hypertarget{class_b_s_tree_ac0f54ec6e60536aafa6e3130968e4858}{\index{B\+S\+Tree@{B\+S\+Tree}!insert\+Helper@{insert\+Helper}}
+\index{insert\+Helper@{insert\+Helper}!B\+S\+Tree@{B\+S\+Tree}}
+\subsubsection[{insert\+Helper}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+Type , class Key\+Type $>$ void {\bf B\+S\+Tree}$<$ Data\+Type, Key\+Type $>$\+::insert\+Helper (
+\begin{DoxyParamCaption}
+\item[{{\bf B\+S\+Tree\+Node} $\ast$\&}]{location, }
+\item[{const Data\+Type \&}]{new\+Data\+Item}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_b_s_tree_ac0f54ec6e60536aafa6e3130968e4858}
+This is the function that will recursively find where to insert and insert the new data.
+
+This first checks if we have gotten to a N\+U\+L\+L pointer in the tree. If it has, then this is the location to insert the new node. If not, compare the data to the current location. If the data is bigger, then recall going right if less then recall going left until the correct positioning. 
+\begin{DoxyParams}{Parameters}
+{\em Node} & pointer and the data. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Precondition}
+there should an initialized tree. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+there will be a new item. 
+\end{DoxyPostcond}
+if reached location, create the new node
+
+if the current location is larger than data go left
+
+if the current location is smaller than data, go right \hypertarget{class_b_s_tree_a43768375369ca8fe641a86451997ad45}{\index{B\+S\+Tree@{B\+S\+Tree}!is\+Empty@{is\+Empty}}
+\index{is\+Empty@{is\+Empty}!B\+S\+Tree@{B\+S\+Tree}}
+\subsubsection[{is\+Empty}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+Type , class Key\+Type $>$ bool {\bf B\+S\+Tree}$<$ Data\+Type, Key\+Type $>$\+::is\+Empty (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_b_s_tree_a43768375369ca8fe641a86451997ad45}
+This is the function that checks if the tree is empty.
+
+Checks if the root is null to see if the tree is empty. 
+\begin{DoxyParams}{Parameters}
+{\em None.} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if empty. False if not.
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Precondition}
+there should an initialized tree. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Nothing changes. 
+\end{DoxyPostcond}
+\hypertarget{class_b_s_tree_ac36b0b564aa3c411c239d730f506f448}{\index{B\+S\+Tree@{B\+S\+Tree}!operator=@{operator=}}
+\index{operator=@{operator=}!B\+S\+Tree@{B\+S\+Tree}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+Type , class Key\+Type $>$ {\bf B\+S\+Tree}$<$ Data\+Type, Key\+Type $>$ \& {\bf B\+S\+Tree}$<$ Data\+Type, Key\+Type $>$\+::operator= (
+\begin{DoxyParamCaption}
+\item[{const {\bf B\+S\+Tree}$<$ Data\+Type, Key\+Type $>$ \&}]{source}
+\end{DoxyParamCaption}
+)}}\label{class_b_s_tree_ac36b0b564aa3c411c239d730f506f448}
+This is the overloaded assignment operator.
+
+Will set the tree equal to the tree in the parameter. This is done by calling the copy\+Help function (details there.) 
+\begin{DoxyParams}{Parameters}
+{\em Another} & B\+S\+T to copy from. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The copied B\+S\+T.
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Precondition}
+There should two initialized trees. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+There will be two identical trees. 
+\end{DoxyPostcond}
+\hypertarget{class_b_s_tree_a755549f7b88d0178a96ca84afd5e04cf}{\index{B\+S\+Tree@{B\+S\+Tree}!remove@{remove}}
+\index{remove@{remove}!B\+S\+Tree@{B\+S\+Tree}}
+\subsubsection[{remove}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+Type , class Key\+Type $>$ bool {\bf B\+S\+Tree}$<$ Data\+Type, Key\+Type $>$\+::remove (
+\begin{DoxyParamCaption}
+\item[{const Key\+Type \&}]{delete\+Key}
+\end{DoxyParamCaption}
+)}}\label{class_b_s_tree_a755549f7b88d0178a96ca84afd5e04cf}
+This is the function that will look for something and delete it.
+
+Calls its helper. 
+\begin{DoxyParams}{Parameters}
+{\em The} & thing to delete (keytype) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True, if found and deleted. False if not found.
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Precondition}
+there should an initialized tree 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+there will one less node if asked to remove something found. 
+\end{DoxyPostcond}
+\hypertarget{class_b_s_tree_a11efb310116399fde0c83c6991a37f7d}{\index{B\+S\+Tree@{B\+S\+Tree}!remove\+Helper@{remove\+Helper}}
+\index{remove\+Helper@{remove\+Helper}!B\+S\+Tree@{B\+S\+Tree}}
+\subsubsection[{remove\+Helper}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+Type , class Key\+Type $>$ bool {\bf B\+S\+Tree}$<$ Data\+Type, Key\+Type $>$\+::remove\+Helper (
+\begin{DoxyParamCaption}
+\item[{{\bf B\+S\+Tree\+Node} $\ast$\&}]{location, }
+\item[{const Key\+Type \&}]{delete\+Key}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_b_s_tree_a11efb310116399fde0c83c6991a37f7d}
+This is the function that will recursively find then delete a node. Then adjusts the tree.
+
+If it has gotten to the end and it has still not found the keytype it ends. Once found checks how many children the node of the item has. If none, just deletes. If it has one then just points the current to the next of next. If two children, find the predeccsor and then overwrites the current data with the predeccesor then calls the remove\+Help to delete the original predeccesor Node. If nothing is found but not null recalls with the appropriate side of the tree. 
+\begin{DoxyParams}{Parameters}
+{\em B\+S\+T} & node, the current location. What to delete, keytype. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if something is deleted. false if not found.
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Precondition}
+there should an initialized tree 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+something will be deleted and tree will still be in order. 
+\end{DoxyPostcond}
+if at the end and not found, return false
+
+if found, delete
+
+if no children
+
+if one child left child, no right
+
+no left, right child
+
+if two children
+
+get predecessor
+
+overwrite the value to delete with the predecessor
+
+delete the node with the value just written to the new location
+
+keep searching \hypertarget{class_b_s_tree_a4359bfee390669b5adaf0380ef62b18d}{\index{B\+S\+Tree@{B\+S\+Tree}!retrieve@{retrieve}}
+\index{retrieve@{retrieve}!B\+S\+Tree@{B\+S\+Tree}}
+\subsubsection[{retrieve}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+Type , class Key\+Type $>$ bool {\bf B\+S\+Tree}$<$ Data\+Type, Key\+Type $>$\+::retrieve (
+\begin{DoxyParamCaption}
+\item[{const Key\+Type \&}]{search\+Key, }
+\item[{Data\+Type \&}]{search\+Data\+Item}
+\end{DoxyParamCaption}
+) const}}\label{class_b_s_tree_a4359bfee390669b5adaf0380ef62b18d}
+This is the function that checks to see if a piece of data is in the B\+S\+T.
+
+Calls the retrieve helper. 
+\begin{DoxyParams}{Parameters}
+{\em The} & thing to look for (Key\+Type) and where to put it (Data\+Type) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Bool, true if found. False if not.
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Precondition}
+there should an initialized tree 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Nothing changes. 
+\end{DoxyPostcond}
+\hypertarget{class_b_s_tree_aae2944702e1c5fe498b8fd93a2c28dab}{\index{B\+S\+Tree@{B\+S\+Tree}!retrieve\+Helper@{retrieve\+Helper}}
+\index{retrieve\+Helper@{retrieve\+Helper}!B\+S\+Tree@{B\+S\+Tree}}
+\subsubsection[{retrieve\+Helper}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+Type , class Key\+Type $>$ bool {\bf B\+S\+Tree}$<$ Data\+Type, Key\+Type $>$\+::retrieve\+Helper (
+\begin{DoxyParamCaption}
+\item[{{\bf B\+S\+Tree\+Node} $\ast$}]{location, }
+\item[{const Key\+Type \&}]{search\+Key, }
+\item[{Data\+Type \&}]{search\+Data\+Item}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_b_s_tree_aae2944702e1c5fe498b8fd93a2c28dab}
+This is the function that will recursively check for a data item.
+
+Checks if we have gotten to the end. If we have and still not found will return false. If the item in the current location is the same will set it equal to the parameter to copy to. If niether of those are true then checks to see if we are searching for something bigger or smaller than the current and go the corresponding way. 
+\begin{DoxyParams}{Parameters}
+{\em B\+S\+T} & node pointer (where to check), the thing to look for (keytype), where to store if found (datatype) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if found, false if not.
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Precondition}
+there should an initialized tree 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Nothing changes. 
+\end{DoxyPostcond}
+if checked the complete tree, return false
+
+if found, return true
+
+if what were are looking for is smaller go left else go right \hypertarget{class_b_s_tree_a44b3002e3476eb410468a4b9aaaa73ef}{\index{B\+S\+Tree@{B\+S\+Tree}!show\+Helper@{show\+Helper}}
+\index{show\+Helper@{show\+Helper}!B\+S\+Tree@{B\+S\+Tree}}
+\subsubsection[{show\+Helper}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+Type , typename Key\+Type $>$ void {\bf B\+S\+Tree}$<$ Data\+Type, Key\+Type $>$\+::show\+Helper (
+\begin{DoxyParamCaption}
+\item[{{\bf B\+S\+Tree\+Node} $\ast$}]{p, }
+\item[{int}]{level}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_b_s_tree_a44b3002e3476eb410468a4b9aaaa73ef}
+\hypertarget{class_b_s_tree_ac28277cacbf8ab33326473a419abf097}{\index{B\+S\+Tree@{B\+S\+Tree}!show\+Structure@{show\+Structure}}
+\index{show\+Structure@{show\+Structure}!B\+S\+Tree@{B\+S\+Tree}}
+\subsubsection[{show\+Structure}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+Type , typename Key\+Type $>$ void {\bf B\+S\+Tree}$<$ Data\+Type, Key\+Type $>$\+::show\+Structure (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_b_s_tree_ac28277cacbf8ab33326473a419abf097}
+\hypertarget{class_b_s_tree_a7f08f48e6d1bbe3eb726856a947325e7}{\index{B\+S\+Tree@{B\+S\+Tree}!write\+Keys@{write\+Keys}}
+\index{write\+Keys@{write\+Keys}!B\+S\+Tree@{B\+S\+Tree}}
+\subsubsection[{write\+Keys}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+Type , class Key\+Type $>$ void {\bf B\+S\+Tree}$<$ Data\+Type, Key\+Type $>$\+::write\+Keys (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_b_s_tree_a7f08f48e6d1bbe3eb726856a947325e7}
+This is the function that will write the data in the tree in order.
+
+Calls its helper. 
+\begin{DoxyParams}{Parameters}
+{\em None.} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Precondition}
+there should an initialized tree. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+data will be printed on the screen. 
+\end{DoxyPostcond}
+\hypertarget{class_b_s_tree_a36adcef767ab5a35a9de275aef841d9c}{\index{B\+S\+Tree@{B\+S\+Tree}!write\+Keys\+Helper@{write\+Keys\+Helper}}
+\index{write\+Keys\+Helper@{write\+Keys\+Helper}!B\+S\+Tree@{B\+S\+Tree}}
+\subsubsection[{write\+Keys\+Helper}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+Type , class Key\+Type $>$ void {\bf B\+S\+Tree}$<$ Data\+Type, Key\+Type $>$\+::write\+Keys\+Helper (
+\begin{DoxyParamCaption}
+\item[{{\bf B\+S\+Tree\+Node} $\ast$}]{location}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_b_s_tree_a36adcef767ab5a35a9de275aef841d9c}
+This is the function that will recursively print out all the data in order.
+
+Navigates all the way to the left of the B\+S\+T, then prints out. Recalls the function with the children to the left of the most left node that has not been printed yet. 
+\begin{DoxyParams}{Parameters}
+{\em B\+S\+T} & node. The current location. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Precondition}
+there should an initialized tree. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+data will be printed on the screen. 
+\end{DoxyPostcond}
+go all the way to the left
+
+once all the way to the left print out the current
+
+check for the children to the right of the most left node \hypertarget{class_b_s_tree_a92079e5301185f41eebe1c32c2357258}{\index{B\+S\+Tree@{B\+S\+Tree}!write\+Less\+Than@{write\+Less\+Than}}
+\index{write\+Less\+Than@{write\+Less\+Than}!B\+S\+Tree@{B\+S\+Tree}}
+\subsubsection[{write\+Less\+Than}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+Type , class Key\+Type $>$ void {\bf B\+S\+Tree}$<$ Data\+Type, Key\+Type $>$\+::write\+Less\+Than (
+\begin{DoxyParamCaption}
+\item[{const Key\+Type \&}]{search\+Key}
+\end{DoxyParamCaption}
+) const}}\label{class_b_s_tree_a92079e5301185f41eebe1c32c2357258}
+N\+O\+T U\+S\+E\+D 
+
+\subsection{Member Data Documentation}
+\hypertarget{class_b_s_tree_a83534afce9094181ac031f9f596a8625}{\index{B\+S\+Tree@{B\+S\+Tree}!root@{root}}
+\index{root@{root}!B\+S\+Tree@{B\+S\+Tree}}
+\subsubsection[{root}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+Type, class Key\+Type$>$ {\bf B\+S\+Tree\+Node}$\ast$ {\bf B\+S\+Tree}$<$ Data\+Type, Key\+Type $>$\+::root\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_b_s_tree_a83534afce9094181ac031f9f596a8625}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_b_s_tree_8h}{B\+S\+Tree.\+h}\item 
+\hyperlink{_b_s_tree_8cpp}{B\+S\+Tree.\+cpp}\item 
+\hyperlink{show9_8cpp}{show9.\+cpp}\end{DoxyCompactItemize}

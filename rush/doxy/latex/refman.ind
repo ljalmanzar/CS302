@@ -1,0 +1,29 @@
+\begin{theindex}
+
+  \item {car}, \hyperpage{5}
+    \subitem {direction}, \hyperpage{5}
+    \subitem {size}, \hyperpage{5}
+    \subitem {xcoor}, \hyperpage{5}
+    \subitem {ycoor}, \hyperpage{5}
+
+  \indexspace
+
+  \item {direction}
+    \subitem {car}, \hyperpage{5}
+
+  \indexspace
+
+  \item {size}
+    \subitem {car}, \hyperpage{5}
+
+  \indexspace
+
+  \item {xcoor}
+    \subitem {car}, \hyperpage{5}
+
+  \indexspace
+
+  \item {ycoor}
+    \subitem {car}, \hyperpage{5}
+
+\end{theindex}

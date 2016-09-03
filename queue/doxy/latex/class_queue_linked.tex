@@ -1,0 +1,162 @@
+\hypertarget{class_queue_linked}{\section{Queue\+Linked$<$ Data\+Type $>$ Class Template Reference}
+\label{class_queue_linked}\index{Queue\+Linked$<$ Data\+Type $>$@{Queue\+Linked$<$ Data\+Type $>$}}
+}
+Inheritance diagram for Queue\+Linked$<$ Data\+Type $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_queue_linked}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_queue_linked_ad356fca32ffd90c78d35d3eb5d84504b}{Queue\+Linked} (int max\+Number=\hyperlink{class_queue}{Queue}$<$ Data\+Type $>$\+::M\+A\+X\+\_\+\+Q\+U\+E\+U\+E\+\_\+\+S\+I\+Z\+E)
+\item 
+\hyperlink{class_queue_linked_ad8749850191f8a4165c8e3a3a266bada}{Queue\+Linked} (const \hyperlink{class_queue_linked}{Queue\+Linked} \&other)
+\item 
+\hypertarget{class_queue_linked_acec147d4de2139d2b6fd511bca6d6299}{\hyperlink{class_queue_linked}{Queue\+Linked} \& \hyperlink{class_queue_linked_acec147d4de2139d2b6fd511bca6d6299}{operator=} (const \hyperlink{class_queue_linked}{Queue\+Linked} \&other)}\label{class_queue_linked_acec147d4de2139d2b6fd511bca6d6299}
+
+\begin{DoxyCompactList}\small\item\em Assignment operator overloaded. \end{DoxyCompactList}\item 
+\hyperlink{class_queue_linked_aed85fa73c60384a3d0c676c0ebbbca19}{$\sim$\+Queue\+Linked} ()
+\item 
+void \hyperlink{class_queue_linked_a7196448729d053f85f255674c7a57a02}{enqueue} (const Data\+Type \&new\+Data\+Item)  throw (logic\+\_\+error)
+\item 
+Data\+Type \hyperlink{class_queue_linked_ac0656892f605af3b952c71706d3af55d}{dequeue} ()  throw (logic\+\_\+error)
+\item 
+void \hyperlink{class_queue_linked_a32c66945765e5d42bbb988b1cdf43886}{clear} ()
+\item 
+bool \hyperlink{class_queue_linked_a425b83383323217c924a41a0226f7022}{is\+Empty} () const 
+\item 
+bool \hyperlink{class_queue_linked_a3de199675ee629f9d20c48d0e2b65f71}{is\+Full} () const 
+\item 
+void \hyperlink{class_queue_linked_a838a51b8023f9cf3a5a24abb67ae1ee4}{put\+Front} (const Data\+Type \&new\+Data\+Item)  throw (logic\+\_\+error)
+\item 
+Data\+Type \hyperlink{class_queue_linked_a2934f746096e31b9728de11f42bdc3cd}{get\+Rear} ()  throw (logic\+\_\+error)
+\item 
+int \hyperlink{class_queue_linked_ab2d7fc0a927f3fe1e2ac44cc042bb961}{get\+Length} () const 
+\item 
+\hypertarget{class_queue_linked_a57d5dd5336545ddc7d1b22cee40fb017}{void {\bfseries show\+Structure} () const }\label{class_queue_linked_a57d5dd5336545ddc7d1b22cee40fb017}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_queue_linked_ad356fca32ffd90c78d35d3eb5d84504b}{\index{Queue\+Linked@{Queue\+Linked}!Queue\+Linked@{Queue\+Linked}}
+\index{Queue\+Linked@{Queue\+Linked}!Queue\+Linked@{Queue\+Linked}}
+\subsubsection[{Queue\+Linked}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+Type $>$ {\bf Queue\+Linked}$<$ Data\+Type $>$\+::{\bf Queue\+Linked} (
+\begin{DoxyParamCaption}
+\item[{int}]{max\+Number = {\ttfamily {\bf Queue}$<$DataType$>$\+:\+:MAX\+\_\+QUEUE\+\_\+SIZE}}
+\end{DoxyParamCaption}
+)}}\label{class_queue_linked_ad356fca32ffd90c78d35d3eb5d84504b}
+Default Constructor, sets pointers to N\+U\+L\+L input parameter is irrelevant since we have no max size \hypertarget{class_queue_linked_ad8749850191f8a4165c8e3a3a266bada}{\index{Queue\+Linked@{Queue\+Linked}!Queue\+Linked@{Queue\+Linked}}
+\index{Queue\+Linked@{Queue\+Linked}!Queue\+Linked@{Queue\+Linked}}
+\subsubsection[{Queue\+Linked}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+Type $>$ {\bf Queue\+Linked}$<$ Data\+Type $>$\+::{\bf Queue\+Linked} (
+\begin{DoxyParamCaption}
+\item[{const {\bf Queue\+Linked}$<$ Data\+Type $>$ \&}]{other}
+\end{DoxyParamCaption}
+)}}\label{class_queue_linked_ad8749850191f8a4165c8e3a3a266bada}
+Copy Constructor copies the input parameter of another queue if it is empty just set pointers to N\+U\+L\+L otherwise copy \hypertarget{class_queue_linked_aed85fa73c60384a3d0c676c0ebbbca19}{\index{Queue\+Linked@{Queue\+Linked}!````~Queue\+Linked@{$\sim$\+Queue\+Linked}}
+\index{````~Queue\+Linked@{$\sim$\+Queue\+Linked}!Queue\+Linked@{Queue\+Linked}}
+\subsubsection[{$\sim$\+Queue\+Linked}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+Type $>$ {\bf Queue\+Linked}$<$ Data\+Type $>$\+::$\sim${\bf Queue\+Linked} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_queue_linked_aed85fa73c60384a3d0c676c0ebbbca19}
+Deconstructor clears all memory 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_queue_linked_a32c66945765e5d42bbb988b1cdf43886}{\index{Queue\+Linked@{Queue\+Linked}!clear@{clear}}
+\index{clear@{clear}!Queue\+Linked@{Queue\+Linked}}
+\subsubsection[{clear}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+Type $>$ void {\bf Queue\+Linked}$<$ Data\+Type $>$\+::clear (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_queue_linked_a32c66945765e5d42bbb988b1cdf43886}
+clear deletes all allocated memory for the queue nodes 
+
+Implements \hyperlink{class_queue}{Queue$<$ Data\+Type $>$}.
+
+\hypertarget{class_queue_linked_ac0656892f605af3b952c71706d3af55d}{\index{Queue\+Linked@{Queue\+Linked}!dequeue@{dequeue}}
+\index{dequeue@{dequeue}!Queue\+Linked@{Queue\+Linked}}
+\subsubsection[{dequeue}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+Type $>$ Data\+Type {\bf Queue\+Linked}$<$ Data\+Type $>$\+::dequeue (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) throw  logic\+\_\+error) \hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_queue_linked_ac0656892f605af3b952c71706d3af55d}
+dequeue takes the front data 
+
+Implements \hyperlink{class_queue}{Queue$<$ Data\+Type $>$}.
+
+\hypertarget{class_queue_linked_a7196448729d053f85f255674c7a57a02}{\index{Queue\+Linked@{Queue\+Linked}!enqueue@{enqueue}}
+\index{enqueue@{enqueue}!Queue\+Linked@{Queue\+Linked}}
+\subsubsection[{enqueue}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+Type $>$ void {\bf Queue\+Linked}$<$ Data\+Type $>$\+::enqueue (
+\begin{DoxyParamCaption}
+\item[{const Data\+Type \&}]{new\+Data\+Item}
+\end{DoxyParamCaption}
+) throw  logic\+\_\+error) \hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_queue_linked_a7196448729d053f85f255674c7a57a02}
+Enqueue adds new data to queue create new node
+
+if the current is empty make first (just realized this could have been coded better, too late to fix/test) 
+
+Implements \hyperlink{class_queue}{Queue$<$ Data\+Type $>$}.
+
+\hypertarget{class_queue_linked_ab2d7fc0a927f3fe1e2ac44cc042bb961}{\index{Queue\+Linked@{Queue\+Linked}!get\+Length@{get\+Length}}
+\index{get\+Length@{get\+Length}!Queue\+Linked@{Queue\+Linked}}
+\subsubsection[{get\+Length}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+Type $>$ int {\bf Queue\+Linked}$<$ Data\+Type $>$\+::get\+Length (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_queue_linked_ab2d7fc0a927f3fe1e2ac44cc042bb961}
+getlength returns the length of the queue \hypertarget{class_queue_linked_a2934f746096e31b9728de11f42bdc3cd}{\index{Queue\+Linked@{Queue\+Linked}!get\+Rear@{get\+Rear}}
+\index{get\+Rear@{get\+Rear}!Queue\+Linked@{Queue\+Linked}}
+\subsubsection[{get\+Rear}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+Type $>$ Data\+Type {\bf Queue\+Linked}$<$ Data\+Type $>$\+::get\+Rear (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) throw  logic\+\_\+error) }}\label{class_queue_linked_a2934f746096e31b9728de11f42bdc3cd}
+getrear grabs the last data item in the queue check for empty
+
+if there is only one item
+
+save the back
+
+go to prior
+
+delete the last
+
+set the next of the new back to null \hypertarget{class_queue_linked_a425b83383323217c924a41a0226f7022}{\index{Queue\+Linked@{Queue\+Linked}!is\+Empty@{is\+Empty}}
+\index{is\+Empty@{is\+Empty}!Queue\+Linked@{Queue\+Linked}}
+\subsubsection[{is\+Empty}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+Type $>$ bool {\bf Queue\+Linked}$<$ Data\+Type $>$\+::is\+Empty (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_queue_linked_a425b83383323217c924a41a0226f7022}
+is\+Empty checks to see if the queue has any data 
+
+Implements \hyperlink{class_queue}{Queue$<$ Data\+Type $>$}.
+
+\hypertarget{class_queue_linked_a3de199675ee629f9d20c48d0e2b65f71}{\index{Queue\+Linked@{Queue\+Linked}!is\+Full@{is\+Full}}
+\index{is\+Full@{is\+Full}!Queue\+Linked@{Queue\+Linked}}
+\subsubsection[{is\+Full}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+Type $>$ bool {\bf Queue\+Linked}$<$ Data\+Type $>$\+::is\+Full (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_queue_linked_a3de199675ee629f9d20c48d0e2b65f71}
+if\+Full irrelevant because always false 
+
+Implements \hyperlink{class_queue}{Queue$<$ Data\+Type $>$}.
+
+\hypertarget{class_queue_linked_a838a51b8023f9cf3a5a24abb67ae1ee4}{\index{Queue\+Linked@{Queue\+Linked}!put\+Front@{put\+Front}}
+\index{put\+Front@{put\+Front}!Queue\+Linked@{Queue\+Linked}}
+\subsubsection[{put\+Front}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+Type $>$ void {\bf Queue\+Linked}$<$ Data\+Type $>$\+::put\+Front (
+\begin{DoxyParamCaption}
+\item[{const Data\+Type \&}]{new\+Data\+Item}
+\end{DoxyParamCaption}
+) throw  logic\+\_\+error) }}\label{class_queue_linked_a838a51b8023f9cf3a5a24abb67ae1ee4}
+putfront will add new data to the queue but differently than enqueue, will put the newest data up front 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Queue\+Linked.\+h\item 
+Queue\+Linked.\+cpp\end{DoxyCompactItemize}

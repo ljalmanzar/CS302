@@ -1,0 +1,174 @@
+#include "Heap.h"
+#include "show11.cpp"
+
+template < typename DataType, typename KeyType, typename Comparator >
+Heap<DataType, KeyType, Comparator>::Heap( int maxNumber )
+	{
+		/// allocate the new memory
+		dataItems = new DataType [maxNumber];
+		/// save max size
+		maxSize = maxNumber;
+		/// set actual size right now
+		size = 0;
+	}
+
+template < typename DataType, typename KeyType, typename Comparator >
+Heap<DataType, KeyType, Comparator>::Heap( const Heap<DataType, KeyType, Comparator>& other )
+	{
+
+	}
+
+template < typename DataType, typename KeyType, typename Comparator >
+Heap<DataType, KeyType, Comparator>& Heap<DataType, KeyType, Comparator>::operator=( const Heap<DataType, KeyType, Comparator>& other )
+	{
+
+	}
+
+template < typename DataType, typename KeyType, typename Comparator >
+Heap<DataType, KeyType, Comparator>::~Heap()
+	{
+
+	}
+
+template < typename DataType, typename KeyType, typename Comparator >
+void Heap<DataType, KeyType, Comparator>::insert( const DataType &newDataItem ) throw ( logic_error )
+	{
+		/// check if full
+		if (isFull())
+			{	
+				//throw logic_error("Heap is full");
+				cout << "Heap is full" << endl;
+				return;
+			}
+		else
+			{
+				/// insert
+				dataItems[size] = newDataItem;
+				size++;
+
+				/// work through its parents to see if it is a max heap
+				/// set indecies 
+				int ci = size - 1;
+				int pi = parentof(size-1);
+				bool flag = true;
+
+				while (flag)
+					{
+						flag = false;
+
+						/// check if inserted if larger than parent
+						if (comparator((dataItems[ci]).getPriority(), (dataItems[pi].getPriority())))
+							{
+								swap(ci,pi);
+								ci = pi;
+								pi = parentof(ci);
+								flag = true; 
+							}	
+					}
+			}
+	}
+
+template < typename DataType, typename KeyType, typename Comparator >
+DataType Heap<DataType, KeyType, Comparator>::remove() throw ( logic_error )
+	{
+		DataType tempp;
+		tempp.setPriority(dataItems[0].getPriority());
+		DataType temp;
+		int index = 0;
+		int i = 0;
+
+		dataItems[index].setPriority(dataItems[size-1].getPriority());
+
+		/// compare the two children
+		while( i < size ){
+			if( comparator( dataItems[leftchild(index)].getPriority(), dataItems[rightchild(index)].getPriority() ) ){
+				if(leftchild(index) < size){
+					temp = dataItems[index];
+					dataItems[index] = dataItems[leftchild(index)];
+					dataItems[leftchild(index)] = temp;
+					}
+				index = leftchild(index);
+			}
+			else{
+				if(rightchild(index) < size){	
+					temp = dataItems[index];		
+					dataItems[index] = dataItems[rightchild(index)];
+					dataItems[rightchild(index)] = temp;
+					}
+				index = rightchild(index);
+			}
+			i = index;
+		}
+
+		//dataItems[size-1].setPriority(dataItems[size-1].getPriority());
+		
+		size --;
+
+		return tempp;
+	}
+
+template < typename DataType, typename KeyType, typename Comparator >
+void Heap<DataType, KeyType, Comparator>::clear()
+	{
+		size = 0;
+	}
+
+template < typename DataType, typename KeyType, typename Comparator >
+bool Heap<DataType, KeyType, Comparator>::isEmpty() const
+	{
+		//return if empty
+		return (size == 0);
+	}
+
+template < typename DataType, typename KeyType, typename Comparator >
+bool Heap<DataType, KeyType, Comparator>::isFull() const
+	{
+		//return the equality
+		return (size == maxSize);
+	}
+
+template < typename DataType, typename KeyType, typename Comparator >
+void Heap<DataType, KeyType, Comparator>::writeLevels() const
+	{
+		int n = 0;
+		int i = 0;
+
+		while (i < size)
+		{
+			for (int j = 0; j < pow(2,n); j++)
+			{
+				if (i < size)
+				{
+					cout << dataItems[i].getPriority() << " ";
+					i++;
+				}
+			}
+
+			cout << endl;
+			n++;
+		}
+	}
+
+template < typename DataType, typename KeyType, typename Comparator >
+inline int Heap<DataType, KeyType, Comparator>::leftchild( int i )
+	{
+		return (2*i) + 1;
+	}
+template < typename DataType, typename KeyType, typename Comparator >
+inline int Heap<DataType, KeyType, Comparator>::rightchild( int i )
+	{
+		return (2*i) + 2;
+	}
+template < typename DataType, typename KeyType, typename Comparator >
+inline int Heap<DataType, KeyType, Comparator>::parentof( int i )
+	{
+		return (i-1) / 2;
+	}
+template < typename DataType, typename KeyType, typename Comparator >
+void Heap<DataType, KeyType, Comparator>::swap( int i, int n )
+	{
+		DataType temp;
+		temp.setPriority (dataItems[i].getPriority());
+		dataItems[i].setPriority (dataItems[n].getPriority());
+		dataItems[n].setPriority (temp.getPriority());
+	}

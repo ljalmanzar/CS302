@@ -1,0 +1,208 @@
+\hypertarget{rush_8cpp}{\section{rush.\+cpp File Reference}
+\label{rush_8cpp}\index{rush.\+cpp@{rush.\+cpp}}
+}
+{\ttfamily \#include $<$iostream$>$}\\*
+{\ttfamily \#include $<$cstdlib$>$}\\*
+{\ttfamily \#include $<$fstream$>$}\\*
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structcar}{car}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{rush_8cpp_af2cbfb884b9be5feaa2dcb6efe5ec196}{print\+Grid} (int grid\mbox{[}$\,$\mbox{]}\mbox{[}\hyperlink{rush_8cpp_a412aaef61a623a4acb699ef4099b2491}{G\+R\+I\+D\+\_\+\+S\+I\+Z\+E}\mbox{]})
+\item 
+void \hyperlink{rush_8cpp_a200bd92092db03bdf739ecae48a8711a}{fill\+Table} (int grid\mbox{[}$\,$\mbox{]}\mbox{[}\hyperlink{rush_8cpp_a412aaef61a623a4acb699ef4099b2491}{G\+R\+I\+D\+\_\+\+S\+I\+Z\+E}\mbox{]}, \hyperlink{structcar}{car} the\+Cars\mbox{[}$\,$\mbox{]}, int car\+Size)
+\item 
+bool \hyperlink{rush_8cpp_adabb5fad33ab2d6f688baeb1ee9df2f6}{move\+Forward} (int grid\mbox{[}$\,$\mbox{]}\mbox{[}\hyperlink{rush_8cpp_a412aaef61a623a4acb699ef4099b2491}{G\+R\+I\+D\+\_\+\+S\+I\+Z\+E}\mbox{]}, \hyperlink{structcar}{car} \&the\+Car)
+\item 
+bool \hyperlink{rush_8cpp_acf6cd32a47964568b98f3a5f211a5e77}{move\+Back} (int grid\mbox{[}$\,$\mbox{]}\mbox{[}\hyperlink{rush_8cpp_a412aaef61a623a4acb699ef4099b2491}{G\+R\+I\+D\+\_\+\+S\+I\+Z\+E}\mbox{]}, \hyperlink{structcar}{car} \&the\+Car)
+\item 
+bool \hyperlink{rush_8cpp_aa7a76b0f24b95eb4d3405fde3836fbcf}{solved} (int grid\mbox{[}$\,$\mbox{]}\mbox{[}\hyperlink{rush_8cpp_a412aaef61a623a4acb699ef4099b2491}{G\+R\+I\+D\+\_\+\+S\+I\+Z\+E}\mbox{]}, \hyperlink{structcar}{car} the\+Cars\mbox{[}$\,$\mbox{]})
+\item 
+bool \hyperlink{rush_8cpp_a0e0ae4893e12228241e4b8ebe30a25d4}{solve\+It} (int grid\mbox{[}$\,$\mbox{]}\mbox{[}\hyperlink{rush_8cpp_a412aaef61a623a4acb699ef4099b2491}{G\+R\+I\+D\+\_\+\+S\+I\+Z\+E}\mbox{]}, \hyperlink{structcar}{car} the\+Cars\mbox{[}$\,$\mbox{]}, int \&move\+Counter, int \&min\+Moves, int car\+Size)
+\item 
+int \hyperlink{rush_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main} ()
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const int \hyperlink{rush_8cpp_a412aaef61a623a4acb699ef4099b2491}{G\+R\+I\+D\+\_\+\+S\+I\+Z\+E} = 8
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{rush_8cpp_a200bd92092db03bdf739ecae48a8711a}{\index{rush.\+cpp@{rush.\+cpp}!fill\+Table@{fill\+Table}}
+\index{fill\+Table@{fill\+Table}!rush.\+cpp@{rush.\+cpp}}
+\subsubsection[{fill\+Table}]{\setlength{\rightskip}{0pt plus 5cm}void fill\+Table (
+\begin{DoxyParamCaption}
+\item[{int}]{grid\mbox{[}$\,$\mbox{]}\mbox{[}\+G\+R\+I\+D\+\_\+\+S\+I\+Z\+E\mbox{]}, }
+\item[{{\bf car}}]{the\+Cars\mbox{[}$\,$\mbox{]}, }
+\item[{int}]{car\+Size}
+\end{DoxyParamCaption}
+)}}\label{rush_8cpp_a200bd92092db03bdf739ecae48a8711a}
+This function is going to edit the grid to have all the cars in their proper place
+
+
+\begin{DoxyParams}{Parameters}
+{\em the} & playing grid which is an integer 2\+D array \\
+\hline
+{\em the} & cars which are in an array of type Car \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void function 
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Precondition}
+a grid and cars have been created 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+the playing grid will be loaded 
+\end{DoxyPostcond}
+empty grid
+
+fill border of game with flag
+
+insert cars
+
+add first part
+
+add rest of each car \hypertarget{rush_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{\index{rush.\+cpp@{rush.\+cpp}!main@{main}}
+\index{main@{main}!rush.\+cpp@{rush.\+cpp}}
+\subsubsection[{main}]{\setlength{\rightskip}{0pt plus 5cm}int main (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{rush_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}
+\hypertarget{rush_8cpp_acf6cd32a47964568b98f3a5f211a5e77}{\index{rush.\+cpp@{rush.\+cpp}!move\+Back@{move\+Back}}
+\index{move\+Back@{move\+Back}!rush.\+cpp@{rush.\+cpp}}
+\subsubsection[{move\+Back}]{\setlength{\rightskip}{0pt plus 5cm}bool move\+Back (
+\begin{DoxyParamCaption}
+\item[{int}]{grid\mbox{[}$\,$\mbox{]}\mbox{[}\+G\+R\+I\+D\+\_\+\+S\+I\+Z\+E\mbox{]}, }
+\item[{{\bf car} \&}]{the\+Car}
+\end{DoxyParamCaption}
+)}}\label{rush_8cpp_acf6cd32a47964568b98f3a5f211a5e77}
+This function is going to move the car in the parameter back If the car is veritcal it will move it up and if it is horizontal it will move it left
+
+
+\begin{DoxyParams}{Parameters}
+{\em the} & playing grid which is an integer 2\+D array \\
+\hline
+{\em the} & car desired to move \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+if the car was able to move (true) or not (false) 
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Precondition}
+a grid and cars have been filled properly 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+the playing grid will be good with the car moved one spot backwards 
+\end{DoxyPostcond}
+check for direction
+
+check for size
+
+update \hypertarget{rush_8cpp_adabb5fad33ab2d6f688baeb1ee9df2f6}{\index{rush.\+cpp@{rush.\+cpp}!move\+Forward@{move\+Forward}}
+\index{move\+Forward@{move\+Forward}!rush.\+cpp@{rush.\+cpp}}
+\subsubsection[{move\+Forward}]{\setlength{\rightskip}{0pt plus 5cm}bool move\+Forward (
+\begin{DoxyParamCaption}
+\item[{int}]{grid\mbox{[}$\,$\mbox{]}\mbox{[}\+G\+R\+I\+D\+\_\+\+S\+I\+Z\+E\mbox{]}, }
+\item[{{\bf car} \&}]{the\+Car}
+\end{DoxyParamCaption}
+)}}\label{rush_8cpp_adabb5fad33ab2d6f688baeb1ee9df2f6}
+This function is going to move the car in the parameter forward If the car is veritcal it will move it down and if it is horizontal it will move it right
+
+
+\begin{DoxyParams}{Parameters}
+{\em the} & playing grid which is an integer 2\+D array \\
+\hline
+{\em the} & car desired to move \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+if the car was able to move (true) or not (false) 
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Precondition}
+a grid and cars have been filled properly 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+the playing grid will be good with the car moved one spot forward 
+\end{DoxyPostcond}
+check for direction
+
+check size
+
+check space in front \hypertarget{rush_8cpp_af2cbfb884b9be5feaa2dcb6efe5ec196}{\index{rush.\+cpp@{rush.\+cpp}!print\+Grid@{print\+Grid}}
+\index{print\+Grid@{print\+Grid}!rush.\+cpp@{rush.\+cpp}}
+\subsubsection[{print\+Grid}]{\setlength{\rightskip}{0pt plus 5cm}void print\+Grid (
+\begin{DoxyParamCaption}
+\item[{int}]{grid\mbox{[}$\,$\mbox{]}\mbox{[}\+G\+R\+I\+D\+\_\+\+S\+I\+Z\+E\mbox{]}}
+\end{DoxyParamCaption}
+)}}\label{rush_8cpp_af2cbfb884b9be5feaa2dcb6efe5ec196}
+\hypertarget{rush_8cpp_aa7a76b0f24b95eb4d3405fde3836fbcf}{\index{rush.\+cpp@{rush.\+cpp}!solved@{solved}}
+\index{solved@{solved}!rush.\+cpp@{rush.\+cpp}}
+\subsubsection[{solved}]{\setlength{\rightskip}{0pt plus 5cm}bool solved (
+\begin{DoxyParamCaption}
+\item[{int}]{grid\mbox{[}$\,$\mbox{]}\mbox{[}\+G\+R\+I\+D\+\_\+\+S\+I\+Z\+E\mbox{]}, }
+\item[{{\bf car}}]{the\+Cars\mbox{[}$\,$\mbox{]}}
+\end{DoxyParamCaption}
+)}}\label{rush_8cpp_aa7a76b0f24b95eb4d3405fde3836fbcf}
+This function is going to check if our main car has reached the edge
+
+
+\begin{DoxyParams}{Parameters}
+{\em the} & playing grid which is an integer 2\+D array \\
+\hline
+{\em the} & car array \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+if the car is at the edge (true) and if it is not (false) 
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Precondition}
+a grid and cars have been filled properly 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+everything will be the same 
+\end{DoxyPostcond}
+\hypertarget{rush_8cpp_a0e0ae4893e12228241e4b8ebe30a25d4}{\index{rush.\+cpp@{rush.\+cpp}!solve\+It@{solve\+It}}
+\index{solve\+It@{solve\+It}!rush.\+cpp@{rush.\+cpp}}
+\subsubsection[{solve\+It}]{\setlength{\rightskip}{0pt plus 5cm}bool solve\+It (
+\begin{DoxyParamCaption}
+\item[{int}]{grid\mbox{[}$\,$\mbox{]}\mbox{[}\+G\+R\+I\+D\+\_\+\+S\+I\+Z\+E\mbox{]}, }
+\item[{{\bf car}}]{the\+Cars\mbox{[}$\,$\mbox{]}, }
+\item[{int \&}]{move\+Counter, }
+\item[{int \&}]{min\+Moves, }
+\item[{int}]{car\+Size}
+\end{DoxyParamCaption}
+)}}\label{rush_8cpp_a0e0ae4893e12228241e4b8ebe30a25d4}
+This function is going to solve the puzzle recursively
+
+
+\begin{DoxyParams}{Parameters}
+{\em the} & playing grid which is an integer 2\+D array \\
+\hline
+{\em the} & car array \\
+\hline
+{\em the} & number of moves \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+if the game is solved true if not false 
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Precondition}
+a grid and cars have been filled properly 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+our car will be at the end of the board 
+\end{DoxyPostcond}
+check if solved 
+
+\subsection{Variable Documentation}
+\hypertarget{rush_8cpp_a412aaef61a623a4acb699ef4099b2491}{\index{rush.\+cpp@{rush.\+cpp}!G\+R\+I\+D\+\_\+\+S\+I\+Z\+E@{G\+R\+I\+D\+\_\+\+S\+I\+Z\+E}}
+\index{G\+R\+I\+D\+\_\+\+S\+I\+Z\+E@{G\+R\+I\+D\+\_\+\+S\+I\+Z\+E}!rush.\+cpp@{rush.\+cpp}}
+\subsubsection[{G\+R\+I\+D\+\_\+\+S\+I\+Z\+E}]{\setlength{\rightskip}{0pt plus 5cm}const int G\+R\+I\+D\+\_\+\+S\+I\+Z\+E = 8}}\label{rush_8cpp_a412aaef61a623a4acb699ef4099b2491}

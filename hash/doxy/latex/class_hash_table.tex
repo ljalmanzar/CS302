@@ -1,0 +1,296 @@
+\hypertarget{class_hash_table}{\section{Hash\+Table$<$ Data\+Type, Key\+Type $>$ Class Template Reference}
+\label{class_hash_table}\index{Hash\+Table$<$ Data\+Type, Key\+Type $>$@{Hash\+Table$<$ Data\+Type, Key\+Type $>$}}
+}
+
+
+{\ttfamily \#include $<$Hash\+Table.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_hash_table_a103b09f30dbac0fe92fc2f1192feb0c1}{Hash\+Table} (int init\+Table\+Size)
+\item 
+\hyperlink{class_hash_table_a5da00f8a0dc9dc745675a96eac228049}{Hash\+Table} (const \hyperlink{class_hash_table}{Hash\+Table} \&other)
+\item 
+\hyperlink{class_hash_table}{Hash\+Table} \& \hyperlink{class_hash_table_add76a73a92b81a2d54c20078d4a76546}{operator=} (const \hyperlink{class_hash_table}{Hash\+Table} \&other)
+\item 
+\hyperlink{class_hash_table_ae25eb9c66b9bce8c9c04f18e22688a15}{$\sim$\+Hash\+Table} ()
+\item 
+void \hyperlink{class_hash_table_adc8f2be061729bdc5ecb171b54304e17}{insert} (const Data\+Type \&new\+Data\+Item)
+\item 
+bool \hyperlink{class_hash_table_a46d3f8ad70fd80dc7aa64f50676ef7a5}{remove} (const Key\+Type \&delete\+Key)
+\item 
+bool \hyperlink{class_hash_table_ad4ee3ff641daa330260a48de29492e66}{retrieve} (const Key\+Type \&search\+Key, Data\+Type \&return\+Item) const 
+\item 
+void \hyperlink{class_hash_table_a57f581334e35d45a8822c03edc0fcca6}{clear} ()
+\item 
+bool \hyperlink{class_hash_table_a101e211a7fca37cd90722e15df2fc571}{is\+Empty} () const 
+\item 
+void \hyperlink{class_hash_table_a8b875e57f71a5bbba394e42361fb9fb4}{show\+Structure} () const 
+\item 
+double \hyperlink{class_hash_table_a4db2d920fd7c632f5b4b1bacd503bbf1}{standard\+Deviation} () const 
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_hash_table_a300302ed45228f07c21ad8bf1d852fdd}{copy\+Table} (const \hyperlink{class_hash_table}{Hash\+Table} \&source)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{class_hash_table_a5b2aa73ce05cee50154f418eab43530b}{table\+Size}
+\item 
+\hyperlink{class_b_s_tree}{B\+S\+Tree}$<$ Data\+Type, Key\+Type $>$ $\ast$ \hyperlink{class_hash_table_a1bff814c04c4dd2f0db26f2387557006}{data\+Table}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_hash_table_a103b09f30dbac0fe92fc2f1192feb0c1}{\index{Hash\+Table@{Hash\+Table}!Hash\+Table@{Hash\+Table}}
+\index{Hash\+Table@{Hash\+Table}!Hash\+Table@{Hash\+Table}}
+\subsubsection[{Hash\+Table}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+Type , typename Key\+Type $>$ {\bf Hash\+Table}$<$ Data\+Type, Key\+Type $>$\+::{\bf Hash\+Table} (
+\begin{DoxyParamCaption}
+\item[{int}]{init\+Table\+Size}
+\end{DoxyParamCaption}
+)}}\label{class_hash_table_a103b09f30dbac0fe92fc2f1192feb0c1}
+This is the default constructor.
+
+Will set the table size, and allocate the memory for the table. \begin{DoxyReturn}{Returns}
+Constructor.
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Precondition}
+Nothing. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+There will be an empty initialized tree. 
+\end{DoxyPostcond}
+save size
+
+initialize the array \hypertarget{class_hash_table_a5da00f8a0dc9dc745675a96eac228049}{\index{Hash\+Table@{Hash\+Table}!Hash\+Table@{Hash\+Table}}
+\index{Hash\+Table@{Hash\+Table}!Hash\+Table@{Hash\+Table}}
+\subsubsection[{Hash\+Table}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+Type , typename Key\+Type $>$ {\bf Hash\+Table}$<$ Data\+Type, Key\+Type $>$\+::{\bf Hash\+Table} (
+\begin{DoxyParamCaption}
+\item[{const {\bf Hash\+Table}$<$ Data\+Type, Key\+Type $>$ \&}]{other}
+\end{DoxyParamCaption}
+)}}\label{class_hash_table_a5da00f8a0dc9dc745675a96eac228049}
+This is the copy constructor.
+
+Will set the table size equal to the parameter's table size and allocates memory for the new table. Then uses the equal operator to set the tables equal to eachother. \begin{DoxyReturn}{Returns}
+Constructor.
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Precondition}
+There should be one table already initialized. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+There will be two identical tables. 
+\end{DoxyPostcond}
+copy size and create new table \hypertarget{class_hash_table_ae25eb9c66b9bce8c9c04f18e22688a15}{\index{Hash\+Table@{Hash\+Table}!````~Hash\+Table@{$\sim$\+Hash\+Table}}
+\index{````~Hash\+Table@{$\sim$\+Hash\+Table}!Hash\+Table@{Hash\+Table}}
+\subsubsection[{$\sim$\+Hash\+Table}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+Type , typename Key\+Type $>$ {\bf Hash\+Table}$<$ Data\+Type, Key\+Type $>$\+::$\sim${\bf Hash\+Table} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_hash_table_ae25eb9c66b9bce8c9c04f18e22688a15}
+This is the destructor.
+
+This simply calls clear to deallocate all memory in each tree. Then deletes the table. 
+\begin{DoxyParams}{Parameters}
+{\em None.} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+None.
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Precondition}
+There should an initialized table. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+All memory will be deallocated. 
+\end{DoxyPostcond}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_hash_table_a57f581334e35d45a8822c03edc0fcca6}{\index{Hash\+Table@{Hash\+Table}!clear@{clear}}
+\index{clear@{clear}!Hash\+Table@{Hash\+Table}}
+\subsubsection[{clear}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+Type , typename Key\+Type $>$ void {\bf Hash\+Table}$<$ Data\+Type, Key\+Type $>$\+::clear (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_hash_table_a57f581334e35d45a8822c03edc0fcca6}
+This is the clear function.
+
+Will iterate throught the table and calls the B\+S\+T clear for each tree. 
+\begin{DoxyParams}{Parameters}
+{\em None.} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Void.
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Precondition}
+There should be a table. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+There will be an empty tree. 
+\end{DoxyPostcond}
+iterate through the complete hash table \hypertarget{class_hash_table_a300302ed45228f07c21ad8bf1d852fdd}{\index{Hash\+Table@{Hash\+Table}!copy\+Table@{copy\+Table}}
+\index{copy\+Table@{copy\+Table}!Hash\+Table@{Hash\+Table}}
+\subsubsection[{copy\+Table}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+Type , typename Key\+Type $>$ void {\bf Hash\+Table}$<$ Data\+Type, Key\+Type $>$\+::copy\+Table (
+\begin{DoxyParamCaption}
+\item[{const {\bf Hash\+Table}$<$ Data\+Type, Key\+Type $>$ \&}]{source}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_hash_table_a300302ed45228f07c21ad8bf1d852fdd}
+This copies two tables.
+
+Calls equal operator. \begin{DoxyReturn}{Returns}
+Void.
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Precondition}
+There should an initialized tree to copy from. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+There will be two identical trees. 
+\end{DoxyPostcond}
+\hypertarget{class_hash_table_adc8f2be061729bdc5ecb171b54304e17}{\index{Hash\+Table@{Hash\+Table}!insert@{insert}}
+\index{insert@{insert}!Hash\+Table@{Hash\+Table}}
+\subsubsection[{insert}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+Type , typename Key\+Type $>$ void {\bf Hash\+Table}$<$ Data\+Type, Key\+Type $>$\+::insert (
+\begin{DoxyParamCaption}
+\item[{const Data\+Type \&}]{new\+Data\+Item}
+\end{DoxyParamCaption}
+)}}\label{class_hash_table_adc8f2be061729bdc5ecb171b54304e17}
+This is insert function.
+
+finds the index the item should go into then calls the B\+S\+T insert function to insert it. 
+\begin{DoxyParams}{Parameters}
+{\em the} & new dataitem. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void.
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Precondition}
+There should an initialized table. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+There will be a new item inside. 
+\end{DoxyPostcond}
+get hash
+
+insert into tree \hypertarget{class_hash_table_a101e211a7fca37cd90722e15df2fc571}{\index{Hash\+Table@{Hash\+Table}!is\+Empty@{is\+Empty}}
+\index{is\+Empty@{is\+Empty}!Hash\+Table@{Hash\+Table}}
+\subsubsection[{is\+Empty}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+Type , typename Key\+Type $>$ bool {\bf Hash\+Table}$<$ Data\+Type, Key\+Type $>$\+::is\+Empty (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_hash_table_a101e211a7fca37cd90722e15df2fc571}
+Not Used check to see if each tree insdie the table is empty
+
+if flag is ever turned into false, then return false \hypertarget{class_hash_table_add76a73a92b81a2d54c20078d4a76546}{\index{Hash\+Table@{Hash\+Table}!operator=@{operator=}}
+\index{operator=@{operator=}!Hash\+Table@{Hash\+Table}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+Type , typename Key\+Type $>$ {\bf Hash\+Table}$<$ Data\+Type, Key\+Type $>$ \& {\bf Hash\+Table}$<$ Data\+Type, Key\+Type $>$\+::operator= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Hash\+Table}$<$ Data\+Type, Key\+Type $>$ \&}]{other}
+\end{DoxyParamCaption}
+)}}\label{class_hash_table_add76a73a92b81a2d54c20078d4a76546}
+This is the equal operator.
+
+Will set the tree equal to the tree in the parameter. This is done by copying the size then iterating through the tress array spots then copying each tree to eachother. 
+\begin{DoxyParams}{Parameters}
+{\em Another} & \hyperlink{class_hash_table}{Hash\+Table} to copy from. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The copied Table.
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Precondition}
+There should two initialized tables. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+There will be two identical tables. 
+\end{DoxyPostcond}
+if the same return
+
+clear
+
+copy the size and create new table
+
+go through tables and copy the trees \hypertarget{class_hash_table_a46d3f8ad70fd80dc7aa64f50676ef7a5}{\index{Hash\+Table@{Hash\+Table}!remove@{remove}}
+\index{remove@{remove}!Hash\+Table@{Hash\+Table}}
+\subsubsection[{remove}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+Type , typename Key\+Type $>$ bool {\bf Hash\+Table}$<$ Data\+Type, Key\+Type $>$\+::remove (
+\begin{DoxyParamCaption}
+\item[{const Key\+Type \&}]{delete\+Key}
+\end{DoxyParamCaption}
+)}}\label{class_hash_table_a46d3f8ad70fd80dc7aa64f50676ef7a5}
+This is the remove function.
+
+finds the index the item should go into then calls the B\+S\+T remove function to remove it. 
+\begin{DoxyParams}{Parameters}
+{\em the} & key to delete \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if found and deleted, false if not.
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Precondition}
+There should an initialized table. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+An item will be removed. 
+\end{DoxyPostcond}
+get its location in the array
+
+check to delete it \hypertarget{class_hash_table_ad4ee3ff641daa330260a48de29492e66}{\index{Hash\+Table@{Hash\+Table}!retrieve@{retrieve}}
+\index{retrieve@{retrieve}!Hash\+Table@{Hash\+Table}}
+\subsubsection[{retrieve}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+Type , typename Key\+Type $>$ bool {\bf Hash\+Table}$<$ Data\+Type, Key\+Type $>$\+::retrieve (
+\begin{DoxyParamCaption}
+\item[{const Key\+Type \&}]{search\+Key, }
+\item[{Data\+Type \&}]{return\+Item}
+\end{DoxyParamCaption}
+) const}}\label{class_hash_table_ad4ee3ff641daa330260a48de29492e66}
+This is the retrieve.
+
+Will check where the key should be then checks if the given is there. If it is then will return it by reference the type it belongs to in the parameter. 
+\begin{DoxyParams}{Parameters}
+{\em The} & key to delete, the thing to save to (datatype). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if found. False if not found.
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Precondition}
+There should be a table. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Nothing changes. 
+\end{DoxyPostcond}
+find location in the array
+
+check if the item is there \hypertarget{class_hash_table_a8b875e57f71a5bbba394e42361fb9fb4}{\index{Hash\+Table@{Hash\+Table}!show\+Structure@{show\+Structure}}
+\index{show\+Structure@{show\+Structure}!Hash\+Table@{Hash\+Table}}
+\subsubsection[{show\+Structure}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+Type , typename Key\+Type $>$ void {\bf Hash\+Table}$<$ Data\+Type, Key\+Type $>$\+::show\+Structure (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_hash_table_a8b875e57f71a5bbba394e42361fb9fb4}
+\hypertarget{class_hash_table_a4db2d920fd7c632f5b4b1bacd503bbf1}{\index{Hash\+Table@{Hash\+Table}!standard\+Deviation@{standard\+Deviation}}
+\index{standard\+Deviation@{standard\+Deviation}!Hash\+Table@{Hash\+Table}}
+\subsubsection[{standard\+Deviation}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+Type , typename Key\+Type $>$ double {\bf Hash\+Table}$<$ Data\+Type, Key\+Type $>$\+::standard\+Deviation (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_hash_table_a4db2d920fd7c632f5b4b1bacd503bbf1}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_hash_table_a1bff814c04c4dd2f0db26f2387557006}{\index{Hash\+Table@{Hash\+Table}!data\+Table@{data\+Table}}
+\index{data\+Table@{data\+Table}!Hash\+Table@{Hash\+Table}}
+\subsubsection[{data\+Table}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+Type , typename Key\+Type $>$ {\bf B\+S\+Tree}$<$Data\+Type, Key\+Type$>$$\ast$ {\bf Hash\+Table}$<$ Data\+Type, Key\+Type $>$\+::data\+Table\hspace{0.3cm}{\ttfamily [private]}}}\label{class_hash_table_a1bff814c04c4dd2f0db26f2387557006}
+\hypertarget{class_hash_table_a5b2aa73ce05cee50154f418eab43530b}{\index{Hash\+Table@{Hash\+Table}!table\+Size@{table\+Size}}
+\index{table\+Size@{table\+Size}!Hash\+Table@{Hash\+Table}}
+\subsubsection[{table\+Size}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+Type , typename Key\+Type $>$ int {\bf Hash\+Table}$<$ Data\+Type, Key\+Type $>$\+::table\+Size\hspace{0.3cm}{\ttfamily [private]}}}\label{class_hash_table_a5b2aa73ce05cee50154f418eab43530b}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_hash_table_8h}{Hash\+Table.\+h}\item 
+\hyperlink{_hash_table_8cpp}{Hash\+Table.\+cpp}\item 
+\hyperlink{show10_8cpp}{show10.\+cpp}\end{DoxyCompactItemize}
